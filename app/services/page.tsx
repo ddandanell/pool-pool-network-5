@@ -4,43 +4,43 @@ import { Droplets, AlertTriangle, CheckCircle2, TestTube, Filter, Waves, Camera,
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Pool Services Bali | Maintenance, Cleaning, Repair & Installation',
-  description: 'Complete pool services in Bali: weekly cleaning, chemical balancing, filter care, pool repair, installation, and emergency green pool rescue for villas and resorts. WhatsApp to book.',
-  keywords: 'pool services Bali, pool maintenance Bali, pool cleaning Bali, pool repair Bali, pool installation Bali, algae removal, chemical balancing, Bali pool experts',
+  title: 'Pool Cleaning Bali Services | Pool Maintenance, Chemical Balancing & Algae Treatment',
+  description: 'Complete pool cleaning Bali services: weekly pool maintenance Bali, pool chemical balancing, algae treatment, green pool rescue, Bali villa pool service, and emergency services. WhatsApp to book.',
+  keywords: 'pool cleaning Bali, pool maintenance Bali, Bali villa pool service, pool chemical balancing, algae treatment, green pool rescue, pool services Bali, villa pool maintenance',
 };
 
 const faqs = [
   {
-    question: 'What pool services do you offer in Bali?',
-    answer: 'We offer comprehensive pool services including weekly maintenance, pool cleaning, chemical balancing, filter and pump maintenance, pool repair, new pool installation, and emergency green pool rescue. Our services cover all types of pools including freshwater, saltwater, and infinity-edge systems.',
+    question: 'What pool cleaning Bali services do you offer?',
+    answer: 'We offer comprehensive pool cleaning Bali services including weekly pool maintenance Bali, pool chemical balancing, algae treatment, green pool rescue, filter and pump maintenance, pool repair, new pool installation, and emergency Bali villa pool service. Our services cover all types of pools including freshwater, saltwater, and infinity-edge systems.',
   },
   {
-    question: 'How often should my pool be serviced in Bali?',
-    answer: 'We recommend weekly pool service as the standard for Bali\'s tropical climate. During the rainy season (November to March), twice-weekly service helps prevent algae growth. Our team can assess your specific pool and usage to recommend the optimal service frequency.',
+    question: 'How often should my pool be serviced in Bali\'s tropical climate?',
+    answer: 'We recommend weekly pool maintenance Bali as the standard for tropical climate. During the rainy season (November to March), twice-weekly pool cleaning Bali helps prevent algae growth and maintains proper pool chemical balancing. Our team can assess your specific pool and usage to recommend the optimal service frequency.',
   },
   {
-    question: 'Do you service saltwater pools?',
-    answer: 'Yes! We have extensive experience with saltwater pool systems and offer specialized maintenance including salt cell cleaning, corrosion prevention, and proper salt level management. Many Bali villas use saltwater systems, and our Premium package is designed specifically for them.',
+    question: 'Do you provide pool chemical balancing services?',
+    answer: 'Yes! Pool chemical balancing is a core part of our pool maintenance Bali service. We test and balance pH, chlorine, alkalinity, and other chemicals specific to Bali\'s tropical conditions with high UV and rainfall. Proper pool chemical balancing is critical for preventing algae and protecting equipment.',
   },
   {
     question: 'Can you repair pool equipment?',
-    answer: 'Absolutely. Our technicians are trained in pool equipment repair including pumps, filters, chlorinators, salt cells, and control systems. We carry common replacement parts and can source specialized equipment as needed.',
+    answer: 'Absolutely. Our technicians are trained in pool equipment repair including pumps, filters, chlorinators, salt cells, and control systems. We carry common replacement parts and can source specialized equipment as needed for our Bali villa pool service.',
   },
   {
-    question: 'Do you offer pool installation services?',
-    answer: 'Yes, we provide complete pool installation services for new builds and renovations. Our installation specialist has managed over 50 pool projects across Bali. We work with architects and builders to ensure your pool meets international standards.',
+    question: 'Do you offer algae treatment and green pool rescue?',
+    answer: 'Yes, we specialize in algae treatment and green pool rescue services with same-day response in Canggu and Seminyak. Our emergency team provides professional shock treatment, algae removal, and complete pool chemical balancing to restore your pool within 24-48 hours.',
   },
   {
     question: 'What chemicals do you use for pool maintenance?',
-    answer: 'We use professional-grade pool chemicals safe for all pool types and swimmers. This includes stabilized chlorine, pH balancers, algaecides, and specialty treatments for tropical conditions. All chemicals are included in our service pricing—no extra charges.',
+    answer: 'We use professional-grade pool chemicals safe for all pool types and swimmers. This includes stabilized chlorine, pH balancers, algaecides, and specialty treatments for tropical conditions. All chemicals for pool chemical balancing are included in our pool maintenance Bali pricing—no extra charges.',
   },
   {
-    question: 'How quickly can you respond to emergencies?',
-    answer: 'We offer same-day emergency response for green pool rescue in Canggu and Seminyak areas (if contacted before 10 AM). Other areas typically receive service within 1-2 business days. Our 24-hour emergency WhatsApp line is available for urgent situations.',
+    question: 'How quickly can you respond to pool emergencies?',
+    answer: 'We offer same-day emergency response for algae treatment and green pool rescue in Canggu and Seminyak areas (if contacted before 10 AM). Other areas typically receive pool cleaning Bali service within 1-2 business days. Our 24-hour emergency WhatsApp line is available for urgent situations.',
   },
   {
     question: 'Do you provide service reports?',
-    answer: 'Yes, every service visit includes a detailed report with before/after photos, water chemistry readings, work completed, and recommendations. Reports are sent via WhatsApp within hours of each visit so you always know your pool\'s status.',
+    answer: 'Yes, every Bali villa pool service visit includes a detailed report with before/after photos, water chemistry readings from pool chemical balancing, work completed, and recommendations. Reports are sent via WhatsApp within hours of each pool maintenance Bali visit.',
   },
 ];
 
@@ -57,10 +57,10 @@ export default function Services() {
         />
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Complete Pool Care Solutions for Bali Villas &amp; Resorts
+            Complete Pool Cleaning Bali &amp; Maintenance Solutions for Villas &amp; Resorts
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
-            From weekly maintenance to emergency rescue, pool repair to new installations—we offer comprehensive pool services tailored to Bali&rsquo;s tropical climate. Over 14 years of experience serving 500+ properties annually.
+            From weekly pool maintenance Bali to emergency algae treatment and green pool rescue—we offer comprehensive pool cleaning Bali services, pool chemical balancing, and Bali villa pool service tailored to tropical climate. Over 14 years of experience serving 500+ properties annually.
           </p>
         </div>
       </section>
@@ -70,13 +70,13 @@ export default function Services() {
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-pool-darker text-center">
-              Professional Pool Services Across Bali
+              Professional Pool Cleaning Bali Services Across Bali
             </h2>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              At Bali Pool Pros, we understand that every pool is unique. Whether you own a luxury villa in Canggu, manage a resort in Nusa Dua, or have a residential property in Ubud, our experienced team provides customized pool maintenance, cleaning, repair, and installation services to meet your specific needs.
+              At Bali Pool Pros, we understand that every pool is unique. Whether you own a luxury villa in Canggu, manage a resort in Nusa Dua, or have a residential property in Ubud, our experienced team provides customized pool cleaning, maintenance, chemical balancing, algae treatment, and villa pool service to meet your specific needs.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Bali&rsquo;s tropical climate presents unique challenges for pool owners. High humidity accelerates algae growth, monsoon rains dilute chemicals, and the salt air in coastal areas can cause corrosion. Our team has spent over a decade developing techniques specifically for these conditions, ensuring your pool stays crystal clear year-round.
+              Bali&rsquo;s tropical climate presents unique challenges for pool owners. High humidity accelerates algae growth, monsoon rains dilute pool chemicals, and the salt air in coastal areas can cause corrosion. Our team has spent over a decade developing specialized techniques and chemical balancing protocols specifically for these conditions, ensuring your pool stays crystal clear year-round.
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function Services() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="section-container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
-            Our Core Pool Services
+            Our Core Pool Cleaning Bali &amp; Maintenance Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Weekly Maintenance */}
@@ -94,9 +94,9 @@ export default function Services() {
               <div className="text-pool mb-4">
                 <Droplets className="h-12 w-12" aria-hidden="true" />
               </div>
-              <h3 className="text-3xl font-bold mb-4 text-pool-darker">Weekly Pool Maintenance</h3>
+              <h3 className="text-3xl font-bold mb-4 text-pool-darker">Weekly Pool Maintenance Bali</h3>
               <p className="text-gray-600 mb-6 text-lg">
-                Our signature weekly maintenance service keeps your pool clean, balanced, and safe year-round. Ideal for villa owners who want set-and-forget reliability with consistent, professional care.
+                Our signature weekly pool maintenance Bali service keeps your pool clean, balanced, and safe year-round. Includes comprehensive pool chemical balancing and Bali villa pool service ideal for villa owners who want set-and-forget reliability.
               </p>
               <ul className="space-y-3 mb-6">
                 {[
@@ -122,17 +122,17 @@ export default function Services() {
               <div className="text-red-500 mb-4">
                 <AlertTriangle className="h-12 w-12" aria-hidden="true" />
               </div>
-              <h3 className="text-3xl font-bold mb-4 text-pool-darker">Emergency Green Pool Rescue</h3>
+              <h3 className="text-3xl font-bold mb-4 text-pool-darker">Emergency Algae Treatment &amp; Green Pool Rescue</h3>
               <p className="text-gray-600 mb-6 text-lg">
-                Your pool turned green overnight? Don&rsquo;t panic. Our emergency rescue team diagnoses the cause, applies professional shock treatment, and restores your pool to crystal-clear water within 24-48 hours.
+                Your pool turned green overnight? Don&rsquo;t panic. Our emergency algae treatment and green pool rescue team provides professional pool chemical balancing, shock treatment, and complete restoration within 24-48 hours.
               </p>
               <ul className="space-y-3 mb-6">
                 {[
                   'Same-day emergency response in Canggu & Seminyak',
                   'Professional algae treatment and removal',
-                  '24-48 hour pool recovery guaranteed',
+                  '24-48 hour pool recovery with pool chemical balancing',
                   'Complete water rebalancing included',
-                  'Follow-up visit if needed (rare cases)',
+                  'Follow-up Bali villa pool service if needed (rare cases)',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start space-x-2">
                     <CheckCircle2 className="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -274,7 +274,7 @@ export default function Services() {
       </section>
 
       {/* FAQ Section */}
-      <FAQ faqs={faqs} title="Pool Services FAQ" />
+      <FAQ faqs={faqs} title="Pool Cleaning Bali &amp; Maintenance Services FAQ" />
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-pool to-pool-dark text-white">
