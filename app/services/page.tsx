@@ -73,10 +73,10 @@ export default function Services() {
               Professional Pool Cleaning Bali Services Across Bali
             </h2>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              At Bali Pool Pros, we understand that every pool is unique. Whether you own a luxury villa in Canggu, manage a resort in Nusa Dua, or have a residential property in Ubud, our experienced team provides customized pool cleaning, maintenance, chemical balancing, algae treatment, and villa pool service to meet your specific needs.
+              At Bali Pool Pros, we understand that every pool is unique. Whether you own a luxury villa in Canggu, manage a resort in Nusa Dua, or have a residential property in Ubud, our experienced team provides customized <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">pool cleaning, maintenance</a>, <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">chemical balancing, algae treatment</a>, and villa pool service to meet your specific needs.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Bali&rsquo;s tropical climate presents unique challenges for pool owners. High humidity accelerates algae growth, monsoon rains dilute pool chemicals, and the salt air in coastal areas can cause corrosion. Our team has spent over a decade developing specialized techniques and chemical balancing protocols specifically for these conditions, ensuring your pool stays crystal clear year-round.
+              Bali&rsquo;s tropical climate presents unique challenges for pool owners. High humidity accelerates <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">algae growth</a>, monsoon rains dilute pool chemicals, and the salt air in coastal areas can cause corrosion. Our team has spent over a decade developing specialized techniques and <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">chemical balancing protocols</a> specifically for these conditions, ensuring your pool stays crystal clear year-round.
             </p>
           </div>
         </div>

@@ -194,7 +194,7 @@ export default function GreenPoolRescue() {
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-700 mb-8 text-center">
-              Once we&rsquo;ve rescued your pool with algae treatment and pool chemical balancing, the best way to prevent another green pool emergency is consistent weekly pool maintenance Bali.
+              Once we&rsquo;ve rescued your pool with <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">algae treatment</a> and <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">pool chemical balancing</a>, the best way to prevent another green pool emergency is consistent weekly pool maintenance Bali.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
