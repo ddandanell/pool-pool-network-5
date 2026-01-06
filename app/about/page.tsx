@@ -4,9 +4,9 @@ import { Heart, Shield, Clock, Users, Leaf, MessageCircle, Award, Wrench } from 
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'About Bali Pool Pros | Expert Pool Service Team Since 2010',
-  description: 'Bali Pool Pros: Bali\'s leading pool service company since 2010. Expert pool maintenance, cleaning, repair, and installation. Local Balinese and expatriate team serving over 500 projects annually.',
-  keywords: 'about Bali Pool Pros, Bali pool experts, pool care team, local pool service Bali, swimming pool company Bali',
+  title: 'About Bali Pool Pros | Expert Pool Cleaning Bali & Maintenance Team Since 2010',
+  description: 'Bali Pool Pros: Bali\'s leading pool cleaning Bali and pool maintenance Bali company since 2010. Expert pool chemical balancing, algae treatment, Bali villa pool service. Local Balinese and expatriate team serving over 500 projects annually.',
+  keywords: 'about Bali Pool Pros, pool cleaning Bali experts, pool maintenance Bali team, Bali villa pool service company, pool chemical balancing specialists',
 };
 
 const teamMembers = [
@@ -96,10 +96,10 @@ export default function About() {
         />
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            About Bali Pool Pros
+            About Bali Pool Pros—Pool Cleaning Bali Experts
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
-            Bali&rsquo;s trusted pool service experts since 2010. Local knowledge, international standards, and a passion for crystal-clear pools.
+            Bali&rsquo;s trusted pool cleaning Bali and pool maintenance Bali experts since 2010. Local knowledge, international standards, and a passion for crystal-clear pools with expert pool chemical balancing.
           </p>
         </div>
       </section>
@@ -109,7 +109,7 @@ export default function About() {
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-pool-darker text-center">
-              Our Story: From Small Team to Bali&rsquo;s Leading Pool Experts
+              Our Story: From Small Team to Bali&rsquo;s Leading Pool Cleaning Bali Experts
             </h2>
             <div className="prose prose-lg max-w-none space-y-6">
               <p className="text-gray-700 text-lg leading-relaxed">

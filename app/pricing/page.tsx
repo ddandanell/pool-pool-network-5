@@ -4,9 +4,9 @@ import { CheckCircle2, Shield, AlertTriangle, Calendar, MessageCircle } from 'lu
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Pool Service Pricing Bali | Get a Free Quote | Bali Pool Pros',
-  description: 'Bali Pool Pros pricing: Get a personalized quote for weekly pool maintenance, emergency green pool rescue, pool repair and installation. Contact us for transparent pricing. No hidden fees.',
-  keywords: 'pool cleaning price Bali, weekly pool service cost, pool rescue cost, pool maintenance pricing, Bali pool service rates, free pool quote',
+  title: 'Pool Cleaning Bali Pricing | Pool Maintenance Bali Quotes | Free Quote',
+  description: 'Bali Pool Pros pricing: Get a personalized quote for weekly pool maintenance Bali, pool cleaning Bali, pool chemical balancing, emergency algae treatment and green pool rescue. Transparent Bali villa pool service pricing. No hidden fees.',
+  keywords: 'pool cleaning Bali price, pool maintenance Bali cost, Bali villa pool service pricing, green pool rescue cost, pool chemical balancing rates, pool service quote Bali',
 };
 
 const faqs = [
@@ -57,10 +57,10 @@ export default function Pricing() {
         />
         <div className="section-container text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Pool Service Pricing
+            Pool Cleaning Bali &amp; Pool Maintenance Pricing
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl mx-auto mb-8">
-            Transparent, fair pricing for professional pool maintenance, cleaning, and repair in Bali. No hidden fees. No surprises.
+            Transparent, fair pricing for professional pool cleaning Bali, pool maintenance Bali, pool chemical balancing, and Bali villa pool service. No hidden fees. No surprises.
           </p>
           <a
             href="https://wa.me/6282237565997?text=I%20would%20like%20a%20price%20quote%20for%20pool%20service"
@@ -78,7 +78,7 @@ export default function Pricing() {
       <section className="py-16 md:py-24 bg-white">
         <div className="section-container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
-            Weekly Maintenance Packages
+            Weekly Pool Maintenance Bali Packages
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Standard Package */}

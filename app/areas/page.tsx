@@ -4,9 +4,9 @@ import { MapPin, Clock, Palmtree, Waves, Mountain, Building } from 'lucide-react
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Pool Service Areas Bali | Canggu, Seminyak, Ubud, Uluwatu & More',
-  description: 'Professional pool service across Bali: Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, Jimbaran, Kerobokan. Same-day emergency service available. WhatsApp to book.',
-  keywords: 'pool service areas Bali, Canggu pool cleaning, Seminyak pool maintenance, Ubud pool service, Uluwatu pool care, Sanur pool cleaning, Nusa Dua pool maintenance',
+  title: 'Pool Cleaning Bali Service Areas | Canggu, Seminyak, Ubud, Uluwatu & More',
+  description: 'Professional pool cleaning Bali and pool maintenance Bali services across all areas: Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua. Same-day emergency algae treatment available. Bali villa pool service. WhatsApp to book.',
+  keywords: 'pool cleaning Bali areas, Canggu pool maintenance, Seminyak pool cleaning, Ubud pool service, Bali villa pool service, pool chemical balancing Bali',
 };
 
 const faqs = [
@@ -132,10 +132,10 @@ export default function Areas() {
         />
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Pool Service Areas Across Bali
+            Pool Cleaning Bali Service Areas Across Bali
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl mb-8">
-            We serve all major villa communities in Bali with professional pool maintenance, cleaning, and repair services. Same-day emergency response in Canggu &amp; Seminyak.
+            We serve all major villa communities in Bali with professional pool cleaning Bali, pool maintenance Bali, pool chemical balancing, and Bali villa pool service. Same-day emergency algae treatment in Canggu &amp; Seminyak.
           </p>
           <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4 max-w-2xl">
             <Clock className="h-8 w-8 flex-shrink-0" aria-hidden="true" />
@@ -176,7 +176,7 @@ export default function Areas() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="section-container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
-            Complete Bali Coverage
+            Complete Pool Cleaning Bali Coverage
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="card">

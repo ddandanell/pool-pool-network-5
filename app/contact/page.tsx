@@ -88,10 +88,10 @@ Additional Message: ${formData.message}`;
         />
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Contact Bali Pool Pros – Book Your Pool Service
+            Contact Bali Pool Pros – Book Pool Cleaning Bali Service
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
-            Ready to experience reliable, transparent pool care? Contact us today.
+            Ready to experience reliable, transparent pool cleaning Bali and pool maintenance Bali? Contact us today for Bali villa pool service.
           </p>
         </div>
       </section>
