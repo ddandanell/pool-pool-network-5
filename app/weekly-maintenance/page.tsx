@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: 'Do I need to be home during pool maintenance Bali visits?',
-    answer: 'No, you don\'t need to be present. Many of our clients are property managers or absentee villa owners. We coordinate access with your staff or key holders and send detailed pool cleaning Bali reports with photos after each visit so you always know your pool\'s pool chemical balancing status.',
+    answer: 'No, you don\'t need to be present. Many of our clients are property managers or absentee villa owners. We coordinate access with your staff or key holders and send detailed reports with photos after each visit so you always know your pool\'s water chemistry status.',
   },
 ];
 
@@ -78,7 +78,7 @@ export default function WeeklyMaintenance() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 'Water chemistry test (pH, chlorine, alkalinity)',
-                'Pool chemical balancing adjustment (as needed)',
+                'Chemical balancing adjustment (as needed)',
                 'Debris skimming & net cleaning',
                 'Filter pressure check & backwash if needed',
                 'Pump & motor inspection',

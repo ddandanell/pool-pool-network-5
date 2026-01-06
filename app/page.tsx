@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ';
 const faqs = [
   {
     question: 'Why does my pool turn green so quickly in Bali?',
-    answer: 'Bali\'s warm temperatures and high humidity cause rapid algae growth within 48 hours if untreated. The tropical climate, combined with high UV exposure and frequent rainfall, creates perfect conditions for algae blooms. Regular pool cleaning Bali services and proper pool chemical balancing are essential to prevent green pools.',
+    answer: 'Bali\'s warm temperatures and high humidity cause rapid algae growth within 48 hours if untreated. The tropical climate, combined with high UV exposure and frequent rainfall, creates perfect conditions for algae blooms. Regular professional pool cleaning and proper chemical balancing are essential to prevent green pools.',
   },
   {
     question: 'How often should my pool be cleaned and treated?',
@@ -95,13 +95,13 @@ export default function Home() {
         <div className="section-container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-pool-darker">
-              Bali&rsquo;s Leading Pool Cleaning Bali &amp; Pool Maintenance Experts Since 2010
+              Bali&rsquo;s Leading Pool Cleaning &amp; Maintenance Experts Since 2010
             </h2>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Welcome to Bali Pool Pros, the island&rsquo;s most trusted pool cleaning Bali and pool maintenance Bali company. Founded in 2010 by local Balinese experts and international pool specialists, we understand the unique challenges of maintaining pools in Bali&rsquo;s tropical climate. Our specialized Bali villa pool service includes pool chemical balancing, algae treatment, and green pool rescue—tailored for the humidity of Ubud to the salt air of Seminyak.
+              Welcome to Bali Pool Pros, the island&rsquo;s most trusted pool cleaning and maintenance company. Founded in 2010 by local Balinese experts and international pool specialists, we understand the unique challenges of maintaining pools in Bali&rsquo;s tropical climate. Our specialized villa pool service includes chemical balancing, algae treatment, and green pool rescue—tailored for the humidity of Ubud to the salt air of Seminyak.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              We serve over 500 villas, resorts, and residential properties annually across Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, and beyond. Whether you need weekly pool maintenance Bali services, emergency algae treatment and green pool rescue, pool repair, or new pool installation, our experienced team delivers reliable, transparent, and professional Bali villa pool service. Contact us today via WhatsApp for the fastest response.
+              We serve over 500 villas, resorts, and residential properties annually across Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, and beyond. Whether you need weekly maintenance, emergency algae treatment and green pool rescue, pool repair, or new pool installation, our experienced team delivers reliable, transparent, and professional service. Contact us today via WhatsApp for the fastest response.
             </p>
           </div>
         </div>
