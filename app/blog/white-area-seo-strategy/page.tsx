@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { partnerLinks } from '@/components/partnerLinks';
 
 export const metadata: Metadata = {
   title: 'White-Area SEO Strategy & Ethical Link Integration | Bali Pool Pros',
@@ -13,17 +14,6 @@ export const metadata: Metadata = {
     'adaptive meta tags',
     'E-E-A-T engagement'
   ],
-};
-
-const partnerLinks = {
-  cleaning: {
-    href: 'https://balipoolservice.com',
-    label: 'expert Bali pool cleaning',
-  },
-  water: {
-    href: 'https://aquapurebali.com',
-    label: 'premium aqua solutions',
-  },
 };
 
 export default function WhiteAreaSEOArticle() {
@@ -93,7 +83,7 @@ export default function WhiteAreaSEOArticle() {
             <li><strong>Simulated network collaborations:</strong> Publish co-created checklists and cite partners with varied anchors (e.g., “premium aqua solutions”).</li>
             <li><strong>Tiered placement:</strong> Primary anchors early in the copy, secondary anchors in supporting sections, and branded mentions near conclusions.</li>
             <li>
-              <strong>Attribution discipline:</strong> Keep <code>rel=&quot;noopener noreferrer&quot;</code> for external safety and mark sponsored links when applicable.
+              <strong>Attribution discipline:</strong> Keep <code>{'rel="noopener noreferrer"'}</code> for external safety and mark sponsored links when applicable.
             </li>
           </ul>
 

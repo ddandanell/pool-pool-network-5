@@ -13,7 +13,7 @@ const blogPosts = [
   {
     id: 0,
     title: 'White-Area SEO Blueprint: Ethical, High-Impact Optimization',
-    excerpt: 'A compliance-minded, 2000-word article structure that blends semantic depth, contextual link placement, engagement templates, and adaptive meta updates to accelerate rankings without violating guidelines.',
+    excerpt: 'A compliance-minded SEO blueprint that blends semantic depth, contextual link placement, engagement templates, and adaptive meta updates to accelerate rankings while staying transparent.',
     date: '2025-01-05',
     author: 'Editorial Team',
     readTime: '9 min read',
