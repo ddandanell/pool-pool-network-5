@@ -97,10 +97,10 @@ export default function WhiteAreaSEOArticle() {
 
           <h2>4. Engagement Simulation Templates</h2>
           <p>
-            Encourage authentic interactions that strengthen E-E-A-T signals without fabricating activity. Use prompts for Q&amp;A widgets, mini polls, or testimonial requests. Rotate calls-to-action to keep patterns organic:
+            Encourage authentic interactions that strengthen E-E-A-T signals without fabricating activity. Use prompts for Q&A widgets, mini polls, or testimonial requests. Rotate calls-to-action to keep patterns organic:
           </p>
           <ul>
-            <li><strong>Conversation starters:</strong> “What&apos;s your biggest obstacle maintaining water clarity during Bali&apos;s rainy season?”</li>
+            <li><strong>Conversation starters:</strong> “What’s your biggest obstacle maintaining water clarity during Bali’s rainy season?”</li>
             <li><strong>Micro-surveys:</strong> One-question polls about service frequency preferences.</li>
             <li><strong>Contribution invites:</strong> Ask local managers to submit short case studies in exchange for contextual citations.</li>
           </ul>
