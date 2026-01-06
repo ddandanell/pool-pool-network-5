@@ -92,10 +92,12 @@ export default function WhiteAreaSEOArticle() {
           <ul>
             <li><strong>Simulated network collaborations:</strong> Publish co-created checklists and cite partners with varied anchors (e.g., “premium aqua solutions”).</li>
             <li><strong>Tiered placement:</strong> Primary anchors early in the copy, secondary anchors in supporting sections, and branded mentions near conclusions.</li>
-            <li><strong>Attribution discipline:</strong> Keep rel=&quot;noopener noreferrer&quot; for external safety and mark sponsored links when applicable.</li>
+            <li>
+              <strong>Attribution discipline:</strong> Keep <code>rel=&quot;noopener noreferrer&quot;</code> for external safety and mark sponsored links when applicable.
+            </li>
           </ul>
 
-          <h2>4. Engagement Simulation Templates</h2>
+          <h2>4. Engagement Templates for Authentic Signals</h2>
           <p>
             Encourage authentic interactions that strengthen E-E-A-T signals without fabricating activity. Use prompts for Q&A widgets, mini polls, or testimonial requests. Rotate calls-to-action to keep patterns organic:
           </p>
