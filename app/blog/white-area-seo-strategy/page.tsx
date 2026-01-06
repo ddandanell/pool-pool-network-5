@@ -22,7 +22,7 @@ const partnerLinks = {
   },
   water: {
     href: 'https://aquapurebali.com',
-    label: 'pure water solutions Bali',
+    label: 'premium aqua solutions',
   },
 };
 
@@ -132,7 +132,7 @@ export default function WhiteAreaSEOArticle() {
               </a>{' '}
               when discussing water quality safeguards.
             </li>
-            <li><strong>Navigation or sidebar:</strong> A single, clearly labeled link such as “Partner: Pure Water Solutions Bali.”</li>
+            <li><strong>Navigation or sidebar:</strong> A single, clearly labeled link such as “Partner: Premium Aqua Solutions.”</li>
             <li><strong>Footer:</strong> Limit to one branded mention per domain to avoid dilution.</li>
             <li><strong>Category hubs:</strong> Cluster anchors in “Bali services” sections to reinforce topicality.</li>
             <li><strong>Emerging pages:</strong> Strengthen new guides with one partner mention plus two internal links to distribute authority evenly.</li>
