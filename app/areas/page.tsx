@@ -135,7 +135,7 @@ export default function Areas() {
             Pool Cleaning Bali Service Areas Across Bali
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl mb-8">
-            We serve all major villa communities in Bali with professional <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline font-medium">pool cleaning Bali, pool maintenance Bali</a>, <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline font-medium">pool chemical balancing</a>, and Bali villa pool service. Same-day emergency algae treatment in Canggu &amp; Seminyak.
+            We serve all major villa communities in Bali with professional <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:text-white underline font-medium">pool cleaning Bali, pool maintenance Bali</a>, <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:text-white underline font-medium">pool chemical balancing</a>, and Bali villa pool service. Same-day emergency algae treatment in Canggu &amp; Seminyak.
           </p>
           <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4 max-w-2xl">
             <Clock className="h-8 w-8 flex-shrink-0" aria-hidden="true" />
