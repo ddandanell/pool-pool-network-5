@@ -4,9 +4,9 @@ import { AlertTriangle, Droplets, Zap, PowerOff, CloudRain, Calendar, CheckCircl
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Green Pool Rescue Bali | 24-Hour Emergency Pool Service | Bali Pool Pros',
-  description: 'Emergency green pool rescue in Bali. Same-day service in Canggu & Seminyak. Professional algae removal, shock treatment, and complete water re-balancing. 24-48 hour pool recovery. WhatsApp to book.',
-  keywords: 'green pool rescue Bali, algae removal Bali, pool shock treatment, emergency pool service Bali, green pool fix, algae pool cleaning',
+  title: 'Algae Treatment & Green Pool Rescue Bali | 24-Hour Emergency Pool Service',
+  description: 'Emergency algae treatment and green pool rescue Bali. Same-day service in Canggu & Seminyak. Professional pool chemical balancing, shock treatment, and complete water re-balancing. 24-48 hour pool recovery. WhatsApp to book.',
+  keywords: 'algae treatment Bali, green pool rescue Bali, emergency pool service Bali, pool chemical balancing, algae removal, green pool fix, pool cleaning Bali',
 };
 
 const faqs = [
@@ -59,11 +59,11 @@ export default function GreenPoolRescue() {
           <div className="flex items-center space-x-4 mb-6">
             <AlertTriangle className="h-16 w-16" aria-hidden="true" />
             <h1 className="text-4xl md:text-6xl font-bold">
-              Green Pool Emergency? We Fix It—Same Day
+              Algae Treatment &amp; Green Pool Rescue—Same Day Service
             </h1>
           </div>
           <p className="text-xl md:text-2xl text-red-100 max-w-3xl">
-            Algae blooms happen fast in Bali&rsquo;s tropical climate. Heavy rain, power outages, or neglected maintenance can turn your crystal-clear pool green overnight. Our emergency rescue team restores your pool within 24-48 hours.
+            Algae blooms happen fast in Bali&rsquo;s tropical climate. Heavy rain, power outages, or neglected pool maintenance Bali can turn your crystal-clear pool green overnight. Our emergency algae treatment and green pool rescue team restores your pool with expert pool chemical balancing within 24-48 hours.
           </p>
         </div>
       </section>
@@ -72,7 +72,7 @@ export default function GreenPoolRescue() {
       <section className="py-16 md:py-24 bg-white">
         <div className="section-container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
-            What Causes Green Pools
+            What Causes Green Pools in Bali
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -121,7 +121,7 @@ export default function GreenPoolRescue() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="section-container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
-            Our Rescue Process
+            Our Algae Treatment &amp; Green Pool Rescue Process
           </h2>
           <div className="max-w-5xl mx-auto">
             <div className="space-y-6">
@@ -146,9 +146,9 @@ export default function GreenPoolRescue() {
                 },
                 {
                   step: '4',
-                  title: 'Water Testing & Adjustment',
+                  title: 'Pool Chemical Balancing & Adjustment',
                   description: 'Balance pH, alkalinity, chlorine to restore safe swimming conditions',
-                  details: 'Multiple rounds of testing to ensure perfect chemical balance',
+                  details: 'Multiple rounds of pool chemical balancing testing to ensure perfect water chemistry',
                 },
                 {
                   step: '5',
@@ -190,16 +190,16 @@ export default function GreenPoolRescue() {
       <section className="py-16 md:py-24 bg-white">
         <div className="section-container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
-            Prevent Future Algae
+            Prevent Future Algae with Pool Maintenance Bali
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-700 mb-8 text-center">
-              Once we&rsquo;ve rescued your pool, the best way to prevent another green pool emergency is consistent weekly maintenance.
+              Once we&rsquo;ve rescued your pool with algae treatment and pool chemical balancing, the best way to prevent another green pool emergency is consistent weekly pool maintenance Bali.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 'Weekly water chemistry testing',
-                'Regular chlorine and pH balancing',
+                'Regular pool chemical balancing (chlorine and pH)',
                 'Filter cleaning and backwashing',
                 'Seasonal algae-prevention treatment',
                 'Early detection of equipment issues',
@@ -213,7 +213,7 @@ export default function GreenPoolRescue() {
             </div>
             <div className="mt-8 text-center">
               <p className="text-lg text-gray-700 mb-4">
-                <strong>Prevention is more cost-effective than rescue.</strong> Contact us for weekly maintenance pricing—it&apos;s significantly less than emergency rescue costs.
+                <strong>Prevention is more cost-effective than algae treatment.</strong> Contact us for weekly pool maintenance Bali pricing—it&apos;s significantly less than emergency green pool rescue costs.
               </p>
               <Link href="/weekly-maintenance" className="btn-primary">
                 Learn About Weekly Maintenance
@@ -224,17 +224,17 @@ export default function GreenPoolRescue() {
       </section>
 
       {/* FAQ Section */}
-      <FAQ faqs={faqs} title="Green Pool Rescue FAQs" />
+      <FAQ faqs={faqs} title="Algae Treatment &amp; Green Pool Rescue FAQs" />
 
       {/* Emergency CTA */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-red-500 to-red-700 text-white">
         <div className="section-container text-center">
           <AlertTriangle className="h-16 w-16 mx-auto mb-6" aria-hidden="true" />
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Need Emergency Green Pool Rescue Now?
+            Need Emergency Algae Treatment &amp; Green Pool Rescue Now?
           </h2>
           <p className="text-xl mb-8 text-red-100 max-w-2xl mx-auto">
-            Same-day response available in Canggu &amp; Seminyak. Message us now for immediate professional assistance.
+            Same-day algae treatment response available in Canggu &amp; Seminyak. Message us now for immediate professional pool cleaning Bali assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

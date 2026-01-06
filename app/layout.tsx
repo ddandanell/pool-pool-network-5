@@ -4,16 +4,16 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Pool Service Bali | Expert Pool Maintenance, Cleaning & Repair',
-  description: 'Professional pool service in Bali. Weekly pool cleaning, maintenance, repair, and installation. Emergency green pool rescue. WhatsApp booking. Serving Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua & more. Bali pool experts since 2010.',
-  keywords: 'pool service Bali, pool maintenance Bali, pool cleaning Bali, pool repair Bali, swimming pool installation Bali, Bali pool experts, villa pool service, pool care Bali',
+  title: 'Pool Cleaning Bali | Pool Maintenance Bali | Bali Villa Pool Service',
+  description: 'Professional pool cleaning Bali and pool maintenance Bali services. Expert pool chemical balancing, algae treatment, green pool rescue, and Bali villa pool service. Serving Canggu, Seminyak, Ubud & more since 2010.',
+  keywords: 'pool cleaning Bali, pool maintenance Bali, Bali villa pool service, algae treatment, green pool rescue, pool chemical balancing, pool service Bali, villa pool maintenance, tropical pool care',
   metadataBase: new URL('https://balipoolpros.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Pool Service Bali | Expert Pool Maintenance, Cleaning & Repair',
-    description: 'Professional pool service in Bali. Weekly pool cleaning, maintenance, repair, and installation. Serving all major areas since 2010.',
+    title: 'Pool Cleaning Bali | Pool Maintenance Bali | Bali Villa Pool Service',
+    description: 'Professional pool cleaning Bali and pool maintenance Bali services. Expert pool chemical balancing, algae treatment, and Bali villa pool service. Serving all major areas since 2010.',
     type: 'website',
     locale: 'en_US',
     siteName: 'Bali Pool Pros',
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pool Service Bali | Expert Pool Maintenance, Cleaning & Repair',
-    description: 'Professional pool service in Bali. Weekly pool cleaning, maintenance, repair, and installation.',
+    title: 'Pool Cleaning Bali | Pool Maintenance Bali | Bali Villa Pool Service',
+    description: 'Professional pool cleaning Bali and pool maintenance Bali. Expert pool chemical balancing, algae treatment, and Bali villa pool service.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -55,7 +55,7 @@ const jsonLd = {
   '@type': 'LocalBusiness',
   '@id': 'https://balipoolpros.com',
   name: 'Bali Pool Pros',
-  description: 'Professional pool service in Bali offering weekly maintenance, cleaning, repair, installation, and emergency green pool rescue. Serving villas, resorts, and residential properties across Bali since 2010.',
+  description: 'Professional pool cleaning Bali and pool maintenance Bali services offering weekly maintenance, pool chemical balancing, algae treatment, green pool rescue, and Bali villa pool service. Serving villas, resorts, and residential properties across Bali since 2010.',
   image: 'https://balipoolpros.com/og-image.jpg',
   url: 'https://balipoolpros.com',
   telephone: '+62-822-3756-5997',
@@ -99,12 +99,14 @@ const jsonLd = {
   ],
   priceRange: 'Contact us for pricing',
   serviceType: [
-    'Pool Maintenance',
-    'Pool Cleaning',
+    'Pool Cleaning Bali',
+    'Pool Maintenance Bali',
+    'Bali Villa Pool Service',
+    'Pool Chemical Balancing',
+    'Algae Treatment',
+    'Green Pool Rescue',
     'Pool Repair',
     'Swimming Pool Installation',
-    'Green Pool Rescue',
-    'Chemical Balancing',
   ],
   foundingDate: '2010',
   founder: {

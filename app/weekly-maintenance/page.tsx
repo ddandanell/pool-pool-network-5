@@ -4,43 +4,43 @@ import { CheckCircle2, CloudRain, Sun, FileText } from 'lucide-react';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Weekly Pool Maintenance Bali | Professional Cleaning & Care | Bali Pool Pros',
-  description: 'Professional weekly pool maintenance for Bali villas and resorts. Complete chemical balancing, filter care, debris removal, and detailed reporting. Transparent pricing. WhatsApp booking.',
-  keywords: 'weekly pool maintenance Bali, pool cleaning checklist, chemical balancing, filter maintenance, pool care Bali, villa pool service',
+  title: 'Weekly Pool Maintenance Bali | Professional Pool Cleaning & Chemical Balancing',
+  description: 'Professional weekly pool maintenance Bali for villas and resorts. Complete pool chemical balancing, pool cleaning Bali, filter care, debris removal, and detailed reporting. Transparent pricing. WhatsApp booking.',
+  keywords: 'weekly pool maintenance Bali, pool cleaning Bali, pool chemical balancing, filter maintenance, Bali villa pool service, pool care Bali, tropical pool maintenance',
 };
 
 const faqs = [
   {
-    question: 'How often should I get my pool cleaned in Bali?',
-    answer: 'Weekly is ideal for Bali\'s tropical climate with its high humidity and warm temperatures. During rainy season (November to March), twice weekly is strongly recommended to prevent algae growth and maintain proper chemical balance. We can assess your specific pool and usage to recommend the optimal frequency.',
+    question: 'How often should I get pool cleaning Bali services in tropical climate?',
+    answer: 'Weekly pool maintenance Bali is ideal for tropical climate with high humidity and warm temperatures. During rainy season (November to March), twice weekly pool cleaning Bali is strongly recommended to prevent algae growth and maintain proper pool chemical balancing. We can assess your specific pool and usage to recommend the optimal frequency.',
   },
   {
-    question: 'What\'s the difference between weekly maintenance and a green pool rescue?',
-    answer: 'Weekly maintenance is preventive—it\'s scheduled, consistent, and affordable. It prevents problems before they start. Green pool rescue is emergency treatment when algae blooms unexpectedly despite (or due to lack of) regular maintenance. Prevention through weekly care is always more cost-effective than emergency rescue.',
+    question: 'What\'s the difference between weekly pool maintenance Bali and green pool rescue?',
+    answer: 'Weekly pool maintenance Bali is preventive—it\'s scheduled, consistent, and affordable. It prevents problems with regular pool chemical balancing before they start. Green pool rescue with algae treatment is emergency treatment when algae blooms unexpectedly. Prevention through weekly pool cleaning Bali is always more cost-effective than emergency rescue.',
   },
   {
-    question: 'My pool is saltwater. Can you maintain it?',
-    answer: 'Yes! Saltwater systems require different chemical approaches and specialized corrosion prevention. We offer a Premium package specifically for saltwater pools. Contact us for pricing—this includes salt cell cleaning, corrosion monitoring, and specialized chemical management.',
+    question: 'Do you provide pool chemical balancing for saltwater pools?',
+    answer: 'Yes! Saltwater systems require different pool chemical balancing approaches and specialized corrosion prevention. We offer a Premium Bali villa pool service package specifically for saltwater pools. Contact us for pricing—this includes salt cell cleaning, corrosion monitoring, and specialized pool chemical balancing management.',
   },
   {
-    question: 'How does rainy season affect my pool in Bali?',
-    answer: 'Heavy rain dilutes pool chemicals, increases algae risk, and can clog filters with debris from storms. We proactively increase visit frequency during rainy season (November to March) and recommend our Plus package (twice weekly) to maintain optimal water quality.',
+    question: 'How does Bali\'s rainy season affect pool chemical balancing?',
+    answer: 'Heavy rain dilutes pool chemicals, increases algae risk, and can clog filters with debris from storms. We proactively increase pool maintenance Bali visit frequency during rainy season (November to March) and provide enhanced pool chemical balancing to maintain optimal water quality.',
   },
   {
-    question: 'Do you offer a discount for longer maintenance contracts?',
-    answer: 'Yes! We offer significant discounts for 3-month and 6-month contracts. Annual contracts are available with custom pricing. Contact us via WhatsApp to discuss long-term service agreements and savings.',
+    question: 'Do you offer discounts for longer pool maintenance Bali contracts?',
+    answer: 'Yes! We offer significant discounts for 3-month and 6-month pool maintenance Bali contracts. Annual Bali villa pool service contracts are available with custom pricing. Contact us via WhatsApp to discuss long-term service agreements and savings.',
   },
   {
-    question: 'Can you provide a written report after each visit?',
-    answer: 'Absolutely! Every visit includes a detailed photo and written checklist showing what was done, current water chemistry readings (pH, chlorine, alkalinity), and any recommendations. Reports are sent via WhatsApp within hours of each service visit.',
+    question: 'Can you provide written reports after each pool cleaning Bali visit?',
+    answer: 'Absolutely! Every pool maintenance Bali visit includes a detailed photo and written checklist showing what was done, current pool chemical balancing readings (pH, chlorine, alkalinity), and any recommendations. Reports are sent via WhatsApp within hours of each service visit.',
   },
   {
     question: 'What time will you service my pool?',
-    answer: 'We schedule pool service during business hours (8 AM - 6 PM, Monday-Saturday). You can choose your preferred day and approximate time window. Our technicians are punctual—if we say 9 AM, we arrive at 9 AM.',
+    answer: 'We schedule pool cleaning Bali services during business hours (8 AM - 6 PM, Monday-Saturday). You can choose your preferred day and approximate time window for Bali villa pool service. Our technicians are punctual—if we say 9 AM, we arrive at 9 AM.',
   },
   {
-    question: 'Do I need to be home during pool maintenance?',
-    answer: 'No, you don\'t need to be present. Many of our clients are property managers or absentee villa owners. We coordinate access with your staff or key holders and send detailed reports with photos after each visit so you always know your pool\'s status.',
+    question: 'Do I need to be home during pool maintenance Bali visits?',
+    answer: 'No, you don\'t need to be present. Many of our clients are property managers or absentee villa owners. We coordinate access with your staff or key holders and send detailed pool cleaning Bali reports with photos after each visit so you always know your pool\'s pool chemical balancing status.',
   },
 ];
 
@@ -57,10 +57,10 @@ export default function WeeklyMaintenance() {
         />
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Weekly Pool Maintenance in Bali That Actually Works
+            Weekly Pool Maintenance Bali That Actually Works
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
-            Consistency prevents problems. Our comprehensive weekly maintenance routine keeps your villa pool safe, crystal clear, and always ready to use. Trusted by 500+ properties across Bali.
+            Consistency prevents problems. Our comprehensive weekly pool maintenance Bali routine includes expert pool cleaning Bali and pool chemical balancing to keep your villa pool safe, crystal clear, and always ready to use. Trusted by 500+ properties across Bali.
           </p>
         </div>
       </section>
@@ -71,19 +71,20 @@ export default function WeeklyMaintenance() {
           <div className="flex items-center justify-center mb-8">
             <FileText className="h-12 w-12 text-pool mr-4" />
             <h2 className="text-3xl md:text-4xl font-bold text-pool-darker">
-              The Weekly Checklist
+              The Weekly Pool Maintenance Bali Checklist
             </h2>
           </div>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 'Water chemistry test (pH, chlorine, alkalinity)',
+                'Pool chemical balancing adjustment (as needed)',
                 'Debris skimming & net cleaning',
                 'Filter pressure check & backwash if needed',
                 'Pump & motor inspection',
                 'Tile line & waterline brush',
                 'Drain strainer baskets',
-                'Chemical adjustment (as needed)',
+                'Algae prevention treatment',
                 'Written report + photos',
                 'WhatsApp summary sent to you',
               ].map((item, index) => (
@@ -101,7 +102,7 @@ export default function WeeklyMaintenance() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="section-container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
-            Why Weekly Maintenance Matters
+            Why Weekly Pool Maintenance Bali Matters
           </h2>
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="card">
@@ -111,15 +112,15 @@ export default function WeeklyMaintenance() {
               </p>
             </div>
             <div className="card">
-              <h3 className="text-2xl font-semibold mb-4 text-pool-darker">Keep Algae Away</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-pool-darker">Keep Algae Away with Pool Chemical Balancing</h3>
               <p className="text-gray-700 text-lg">
-                Consistent chlorine and pH levels keep algae away. In Bali&rsquo;s humid climate, skipping weeks invites green water and equipment damage. Weekly maintenance ensures your pool stays crystal clear.
+                Consistent pool chemical balancing and proper chlorine and pH levels keep algae away. In Bali&rsquo;s humid climate, skipping weeks invites green water and equipment damage. Weekly pool maintenance Bali ensures your pool stays crystal clear.
               </p>
             </div>
             <div className="card">
               <h3 className="text-2xl font-semibold mb-4 text-pool-darker">Safe Swimming Conditions</h3>
               <p className="text-gray-700 text-lg">
-                Properly balanced water protects swimmers from skin and eye irritation. Our weekly testing ensures safe chlorine levels, balanced pH, and correct alkalinity for comfortable swimming.
+                Properly balanced water with expert pool chemical balancing protects swimmers from skin and eye irritation. Our weekly pool maintenance Bali testing ensures safe chlorine levels, balanced pH, and correct alkalinity for comfortable swimming.
               </p>
             </div>
             <div className="card">
@@ -198,16 +199,16 @@ export default function WeeklyMaintenance() {
       </section>
 
       {/* FAQ Section */}
-      <FAQ faqs={faqs} title="Weekly Pool Maintenance FAQs" />
+      <FAQ faqs={faqs} title="Weekly Pool Maintenance Bali &amp; Pool Chemical Balancing FAQs" />
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-pool to-pool-dark text-white">
         <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Start Your Weekly Pool Maintenance Today
+            Start Your Weekly Pool Maintenance Bali Today
           </h2>
           <p className="text-xl mb-8 text-pool-light max-w-2xl mx-auto">
-            Reliable, transparent, and professional pool care for your Bali villa or resort
+            Reliable, transparent pool cleaning Bali and pool chemical balancing for your Bali villa or resort
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/pricing" className="btn-primary bg-white text-pool hover:bg-gray-100">
