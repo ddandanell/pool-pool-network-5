@@ -15,17 +15,18 @@ export default function Header() {
     { name: 'Areas We Serve', href: '/areas' },
     { name: 'Pricing', href: '/pricing' },
     { name: 'About', href: '/about' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      <nav className="section-container">
+      <nav className="section-container" aria-label="Main navigation">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Droplet className="h-8 w-8 text-pool" />
-            <span className="text-2xl font-bold text-pool-darker">Bali Pool Care</span>
+          <Link href="/" className="flex items-center space-x-2" aria-label="Bali Pool Pros - Home">
+            <Droplet className="h-8 w-8 text-pool" aria-hidden="true" />
+            <span className="text-2xl font-bold text-pool-darker">Bali Pool Pros</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,14 +46,17 @@ export default function Header() {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 rounded-md text-gray-700 hover:text-pool hover:bg-gray-100"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? <X className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-200">
+          <div id="mobile-menu" className="lg:hidden py-4 border-t border-gray-200">
             {navigation.map((item) => (
               <Link
                 key={item.name}

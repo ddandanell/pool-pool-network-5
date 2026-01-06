@@ -1,9 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Enable image optimization for Vercel
   images: {
-    unoptimized: true
-  }
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+  // Enable strict mode for better debugging
+  reactStrictMode: true,
+  // Optimize for production
+  poweredByHeader: false,
+  // Compress responses
+  compress: true,
 }
 
 module.exports = nextConfig

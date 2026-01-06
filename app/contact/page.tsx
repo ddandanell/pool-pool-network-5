@@ -2,6 +2,42 @@
 
 import { useState } from 'react';
 import { MessageCircle, Mail, Clock, MapPin, CheckCircle2 } from 'lucide-react';
+import FAQ from '@/components/FAQ';
+
+const faqs = [
+  {
+    question: 'What is the fastest way to contact Bali Pool Pros?',
+    answer: 'WhatsApp is our fastest communication channel. Message us at +62 822-3756-5997 and we typically respond within 2 hours during business hours (Monday-Friday 8 AM - 6 PM, Saturday 8 AM - 4 PM). For emergencies, we have a 24-hour WhatsApp line.',
+  },
+  {
+    question: 'How quickly can you start pool service?',
+    answer: 'For regular maintenance, we can usually schedule your first visit within 24-48 hours of booking. For emergency green pool rescue in Canggu and Seminyak, we offer same-day response if contacted before 10 AM.',
+  },
+  {
+    question: 'Do I need to be present for pool service visits?',
+    answer: 'No, you don\'t need to be present. Many of our clients are property managers or absentee owners. We can coordinate access with your staff or key holders. After each visit, we send detailed reports with photos via WhatsApp.',
+  },
+  {
+    question: 'What information do you need to provide a quote?',
+    answer: 'To provide an accurate quote, we need your pool location, pool type (freshwater or saltwater), approximate pool size, and the type of service you\'re interested in. You can share these details via WhatsApp or our contact form.',
+  },
+  {
+    question: 'Do you offer free pool assessments?',
+    answer: 'Yes, we offer free initial assessments for new clients in our core service areas. Our technician will visit your property, evaluate your pool condition, and provide recommendations and pricing based on your specific needs.',
+  },
+  {
+    question: 'What are your office hours?',
+    answer: 'Our office hours are Monday through Friday 8 AM to 6 PM, and Saturday 8 AM to 4 PM. Sunday service is available for emergencies only. Our WhatsApp line is monitored for urgent situations outside regular hours.',
+  },
+  {
+    question: 'Can I get a quote via email?',
+    answer: 'Yes, you can email us at hello@balipoolpros.com for quotes and detailed inquiries. However, WhatsApp is faster for booking and real-time communication. We respond to all emails within 24 business hours.',
+  },
+  {
+    question: 'What payment methods do you accept?',
+    answer: 'We accept bank transfer (Indonesian banks), cash payment, and major credit cards for larger projects. For regular maintenance, we typically invoice monthly with payment via bank transfer.',
+  },
+];
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -28,7 +64,7 @@ Preferred Start Date: ${formData.preferredDate}
 Email: ${formData.email}
 Additional Message: ${formData.message}`;
 
-    const whatsappUrl = `https://wa.me/62811XXXXXXX?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/6282237565997?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     setSubmitted(true);
   };
@@ -43,10 +79,16 @@ Additional Message: ${formData.message}`;
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-pool to-pool-dark text-white py-16 md:py-24">
-        <div className="section-container">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Get in Touch – Book Your Service
+      <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1920&q=80)' }}
+          role="img"
+          aria-label="Contact our Bali pool service team for professional pool maintenance"
+        />
+        <div className="section-container relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Contact Bali Pool Pros – Book Your Pool Service
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
             Ready to experience reliable, transparent pool care? Contact us today.
@@ -64,12 +106,12 @@ Additional Message: ${formData.message}`;
               <h3 className="font-semibold text-xl mb-3 text-pool-darker">WhatsApp (Fastest)</h3>
               <p className="text-gray-600 mb-4">Message us anytime</p>
               <a
-                href="https://wa.me/62811XXXXXXX"
+                href="https://wa.me/6282237565997"
                 className="text-pool font-semibold hover:underline text-lg"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                +62 811 XXX XXXX
+                +62 822-3756-5997
               </a>
               <p className="text-sm text-gray-500 mt-2">
                 Response time: Under 2 hours (business hours)
@@ -321,27 +363,30 @@ Additional Message: ${formData.message}`;
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <FAQ faqs={faqs} title="Contact & Booking FAQs" />
+
       {/* Emergency Contact */}
       <section className="py-16 md:py-24 bg-red-50 border-y-2 border-red-200">
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
             <div className="bg-red-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <MessageCircle className="h-8 w-8" />
+              <MessageCircle className="h-8 w-8" aria-hidden="true" />
             </div>
             <h2 className="text-3xl font-bold mb-4 text-pool-darker">
-              Need Emergency Pool Service?
+              Need Emergency Pool Service in Bali?
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              Green pool or urgent issue? Contact our 24-hour emergency line
+              Green pool or urgent issue? Contact our 24-hour emergency WhatsApp line for same-day response
             </p>
             <a
-              href="https://wa.me/62811XXXXXXX?text=EMERGENCY%20-%20Pool%20service%20needed"
+              href="https://wa.me/6282237565997?text=EMERGENCY%20-%20Pool%20service%20needed"
               className="btn-primary bg-red-500 hover:bg-red-600 inline-flex items-center space-x-2"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MessageCircle className="h-5 w-5" />
-              <span>WhatsApp Emergency Line: +62 811 XXX XXXX</span>
+              <MessageCircle className="h-5 w-5" aria-hidden="true" />
+              <span>WhatsApp Emergency Line: +62 822-3756-5997</span>
             </a>
           </div>
         </div>

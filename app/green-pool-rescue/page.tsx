@@ -1,27 +1,69 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { AlertTriangle, Droplets, Zap, PowerOff, CloudRain, Calendar, CheckCircle2, Clock } from 'lucide-react';
+import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Green Pool Rescue Bali | 24-Hour Emergency Service',
-  description: 'Emergency green pool cleanup in Bali. Same-day service. Full algae removal, shock treatment, re-balancing. WhatsApp to book.',
-  keywords: 'green pool rescue Bali, algae removal, pool shock treatment, emergency pool service',
+  title: 'Green Pool Rescue Bali | 24-Hour Emergency Pool Service | Bali Pool Pros',
+  description: 'Emergency green pool rescue in Bali. Same-day service in Canggu & Seminyak. Professional algae removal, shock treatment, and complete water re-balancing. 24-48 hour pool recovery. WhatsApp to book.',
+  keywords: 'green pool rescue Bali, algae removal Bali, pool shock treatment, emergency pool service Bali, green pool fix, algae pool cleaning',
 };
+
+const faqs = [
+  {
+    question: 'How quickly can you respond to a green pool emergency in Bali?',
+    answer: 'Same-day response is available in Canggu and Seminyak if requested before 10 AM. Other areas typically receive service within 1-2 business days. We have a 24-hour emergency WhatsApp line for urgent situations that monitors messages around the clock.',
+  },
+  {
+    question: 'What chemicals do you use for green pool treatment, and are they safe?',
+    answer: 'We use professional pool-grade chlorine, pH buffers, and algaecides approved for residential pools. We do not use harsh industrial chemicals. All treatments are safe for families, pets, and pool equipment after proper circulation time (typically 24-48 hours after treatment).',
+  },
+  {
+    question: 'How long does it take to clear a green pool in Bali?',
+    answer: 'Most green pools clear within 24-48 hours with professional treatment. Severe algae blooms or very large pools may require a second treatment visit. We monitor progress continuously and keep you updated via WhatsApp throughout the recovery process.',
+  },
+  {
+    question: 'Can I swim during the green pool rescue process?',
+    answer: 'No, swimming is not safe during shock treatment. Chlorine levels are elevated significantly higher than normal to kill algae effectively. We\'ll test the water and let you know when it\'s safe to swim again—typically 24-48 hours after treatment is complete.',
+  },
+  {
+    question: 'What if my pool doesn\'t clear after the first treatment?',
+    answer: 'Severe cases may need a second visit. This is rare (less than 10% of cases) but can happen with extreme algae blooms, underlying equipment issues, or very large pools. We\'ll assess and inform you if additional treatment is needed, and provide a quote for any follow-up work.',
+  },
+  {
+    question: 'What causes pools to turn green so quickly in Bali?',
+    answer: 'Bali\'s combination of high temperatures, humidity, and abundant sunlight creates ideal conditions for rapid algae growth. Common triggers include power outages stopping circulation, heavy monsoon rains diluting chemicals, pump/filter failures, and irregular maintenance.',
+  },
+  {
+    question: 'Is green pool rescue more expensive than regular maintenance?',
+    answer: 'Emergency rescue is priced based on pool size and severity, and is typically more than regular weekly maintenance. Prevention through consistent maintenance is always more cost-effective than emergency rescue. Contact us for a personalized quote, and after rescue, we recommend starting weekly maintenance to prevent recurrence.',
+  },
+  {
+    question: 'Will you clean the pool completely or just treat the water?',
+    answer: 'Our green pool rescue includes complete treatment: water chemistry assessment, professional shock treatment, algae removal, filter backwashing, debris removal, and complete water rebalancing. We treat both the water and clean the physical pool to restore it to crystal-clear condition.',
+  },
+];
 
 export default function GreenPoolRescue() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-red-500 to-red-700 text-white py-16 md:py-24">
-        <div className="section-container">
+      <section className="relative bg-gradient-to-br from-red-500 to-red-700 text-white py-20 md:py-32">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1572331165267-854da2b10ccc?w=1920&q=80)' }}
+          role="img"
+          aria-label="Emergency green pool rescue service in Bali"
+        />
+        <div className="section-container relative z-10">
           <div className="flex items-center space-x-4 mb-6">
-            <AlertTriangle className="h-16 w-16" />
-            <h1 className="text-4xl md:text-5xl font-bold">
-              Your Pool Turned Green? We Fix It—Same Day
+            <AlertTriangle className="h-16 w-16" aria-hidden="true" />
+            <h1 className="text-4xl md:text-6xl font-bold">
+              Green Pool Emergency? We Fix It—Same Day
             </h1>
           </div>
           <p className="text-xl md:text-2xl text-red-100 max-w-3xl">
-            Algae blooms happen. Heavy rain, power outages, neglected maintenance—your clear pool can turn green overnight. We&rsquo;ll fix it fast.
+            Algae blooms happen fast in Bali&rsquo;s tropical climate. Heavy rain, power outages, or neglected maintenance can turn your crystal-clear pool green overnight. Our emergency rescue team restores your pool within 24-48 hours.
           </p>
         </div>
       </section>
@@ -171,7 +213,7 @@ export default function GreenPoolRescue() {
             </div>
             <div className="mt-8 text-center">
               <p className="text-lg text-gray-700 mb-4">
-                <strong>Prevention is cheaper than rescue.</strong> Weekly maintenance starts at 350k/week—less than half the cost of a single emergency rescue.
+                <strong>Prevention is more cost-effective than rescue.</strong> Contact us for weekly maintenance pricing—it&apos;s significantly less than emergency rescue costs.
               </p>
               <Link href="/weekly-maintenance" className="btn-primary">
                 Learn About Weekly Maintenance
@@ -181,62 +223,27 @@ export default function GreenPoolRescue() {
         </div>
       </section>
 
-      {/* FAQs */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="section-container">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
-            Frequently Asked Questions
-          </h2>
-          <div className="max-w-4xl mx-auto space-y-6">
-            {[
-              {
-                q: 'How quickly can you respond to a green pool emergency?',
-                a: 'Same-day response in Canggu & Seminyak (if requested before 10 AM). Other areas: 1–2 days. We also offer 24-hour emergency line for urgent calls.',
-              },
-              {
-                q: 'What chemicals do you use, and are they safe?',
-                a: 'We use standard pool-grade chlorine, pH buffers, and algaecides approved for residential pools. We do not use harsh industrial chemicals. All treatment is safe for families and pets (after proper circulation time).',
-              },
-              {
-                q: 'How long does it take to clear a green pool?',
-                a: 'Most green pools clear within 24-48 hours. Severe algae blooms or very large pools may require a second treatment. We monitor progress and keep you updated via WhatsApp.',
-              },
-              {
-                q: 'Can I swim during the rescue process?',
-                a: 'No. During shock treatment, chlorine levels are very high and unsafe for swimming. We\'ll let you know when it\'s safe to use your pool again—typically 24-48 hours after treatment.',
-              },
-              {
-                q: 'What if my pool doesn\'t clear after the first treatment?',
-                a: 'Severe cases may need a second visit. Follow-up visits cost 400,000 IDR. This is rare but can happen with extreme algae blooms or underlying equipment issues.',
-              },
-            ].map((faq, index) => (
-              <div key={index} className="card">
-                <h3 className="font-semibold text-lg mb-3 text-pool-darker">{faq.q}</h3>
-                <p className="text-gray-700">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <FAQ faqs={faqs} title="Green Pool Rescue FAQs" />
 
       {/* Emergency CTA */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-red-500 to-red-700 text-white">
         <div className="section-container text-center">
-          <AlertTriangle className="h-16 w-16 mx-auto mb-6" />
+          <AlertTriangle className="h-16 w-16 mx-auto mb-6" aria-hidden="true" />
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Need Emergency Pool Rescue Now?
+            Need Emergency Green Pool Rescue Now?
           </h2>
           <p className="text-xl mb-8 text-red-100 max-w-2xl mx-auto">
-            Same-day response available in Canggu & Seminyak. Message us now for immediate assistance.
+            Same-day response available in Canggu &amp; Seminyak. Message us now for immediate professional assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/62811XXXXXXX?text=EMERGENCY%20-%20Green%20pool%20rescue%20needed"
+              href="https://wa.me/6282237565997?text=EMERGENCY%20-%20Green%20pool%20rescue%20needed"
               className="btn-primary bg-white text-red-600 hover:bg-gray-100 text-center inline-flex items-center justify-center space-x-2"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AlertTriangle className="h-5 w-5" />
+              <AlertTriangle className="h-5 w-5" aria-hidden="true" />
               <span>Message Us for Same-Day Rescue</span>
             </a>
             <Link href="/pricing" className="btn-secondary border-white text-white hover:bg-white/10">

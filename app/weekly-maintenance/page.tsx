@@ -1,24 +1,66 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { CheckCircle2, Calendar, CloudRain, Sun, FileText } from 'lucide-react';
+import { CheckCircle2, CloudRain, Sun, FileText } from 'lucide-react';
+import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Weekly Pool Maintenance Bali | Cleaning & Care',
-  description: 'Weekly pool cleaning for Bali villas. Chemical balance, filter care, debris removal. Transparent pricing. WhatsApp booking.',
-  keywords: 'weekly pool maintenance Bali, pool cleaning checklist, chemical balancing, filter maintenance',
+  title: 'Weekly Pool Maintenance Bali | Professional Cleaning & Care | Bali Pool Pros',
+  description: 'Professional weekly pool maintenance for Bali villas and resorts. Complete chemical balancing, filter care, debris removal, and detailed reporting. Transparent pricing. WhatsApp booking.',
+  keywords: 'weekly pool maintenance Bali, pool cleaning checklist, chemical balancing, filter maintenance, pool care Bali, villa pool service',
 };
+
+const faqs = [
+  {
+    question: 'How often should I get my pool cleaned in Bali?',
+    answer: 'Weekly is ideal for Bali\'s tropical climate with its high humidity and warm temperatures. During rainy season (November to March), twice weekly is strongly recommended to prevent algae growth and maintain proper chemical balance. We can assess your specific pool and usage to recommend the optimal frequency.',
+  },
+  {
+    question: 'What\'s the difference between weekly maintenance and a green pool rescue?',
+    answer: 'Weekly maintenance is preventive—it\'s scheduled, consistent, and affordable. It prevents problems before they start. Green pool rescue is emergency treatment when algae blooms unexpectedly despite (or due to lack of) regular maintenance. Prevention through weekly care is always more cost-effective than emergency rescue.',
+  },
+  {
+    question: 'My pool is saltwater. Can you maintain it?',
+    answer: 'Yes! Saltwater systems require different chemical approaches and specialized corrosion prevention. We offer a Premium package specifically for saltwater pools. Contact us for pricing—this includes salt cell cleaning, corrosion monitoring, and specialized chemical management.',
+  },
+  {
+    question: 'How does rainy season affect my pool in Bali?',
+    answer: 'Heavy rain dilutes pool chemicals, increases algae risk, and can clog filters with debris from storms. We proactively increase visit frequency during rainy season (November to March) and recommend our Plus package (twice weekly) to maintain optimal water quality.',
+  },
+  {
+    question: 'Do you offer a discount for longer maintenance contracts?',
+    answer: 'Yes! We offer significant discounts for 3-month and 6-month contracts. Annual contracts are available with custom pricing. Contact us via WhatsApp to discuss long-term service agreements and savings.',
+  },
+  {
+    question: 'Can you provide a written report after each visit?',
+    answer: 'Absolutely! Every visit includes a detailed photo and written checklist showing what was done, current water chemistry readings (pH, chlorine, alkalinity), and any recommendations. Reports are sent via WhatsApp within hours of each service visit.',
+  },
+  {
+    question: 'What time will you service my pool?',
+    answer: 'We schedule pool service during business hours (8 AM - 6 PM, Monday-Saturday). You can choose your preferred day and approximate time window. Our technicians are punctual—if we say 9 AM, we arrive at 9 AM.',
+  },
+  {
+    question: 'Do I need to be home during pool maintenance?',
+    answer: 'No, you don\'t need to be present. Many of our clients are property managers or absentee villa owners. We coordinate access with your staff or key holders and send detailed reports with photos after each visit so you always know your pool\'s status.',
+  },
+];
 
 export default function WeeklyMaintenance() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-pool to-pool-dark text-white py-16 md:py-24">
-        <div className="section-container">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Weekly Pool Maintenance That Actually Works
+      <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1920&q=80)' }}
+          role="img"
+          aria-label="Professional weekly pool maintenance service in Bali villa"
+        />
+        <div className="section-container relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Weekly Pool Maintenance in Bali That Actually Works
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
-            Consistency prevents problems. Our weekly routine keeps your pool safe, clear, and ready to use.
+            Consistency prevents problems. Our comprehensive weekly maintenance routine keeps your villa pool safe, crystal clear, and always ready to use. Trusted by 500+ properties across Bali.
           </p>
         </div>
       </section>
@@ -155,63 +197,24 @@ export default function WeeklyMaintenance() {
         </div>
       </section>
 
-      {/* FAQs */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="section-container">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
-            Frequently Asked Questions
-          </h2>
-          <div className="max-w-4xl mx-auto space-y-6">
-            {[
-              {
-                q: 'How often should I get my pool cleaned?',
-                a: 'Weekly is ideal for Bali\'s climate and high humidity. During rainy season (Nov–Mar), twice weekly is recommended to prevent algae. We can adjust based on your pool\'s condition and your usage.',
-              },
-              {
-                q: 'What\'s the difference between weekly maintenance and a green pool rescue?',
-                a: 'Weekly maintenance prevents problems. It\'s scheduled, consistent, and affordable. Green pool rescue is emergency treatment when algae blooms unexpectedly. Prevention is cheaper than rescue.',
-              },
-              {
-                q: 'My pool is saltwater. Can you maintain it?',
-                a: 'Yes. Saltwater systems require different chemical approaches and corrosion prevention. We adjust pricing for saltwater; rates start at 500k/week. Message us for a quote.',
-              },
-              {
-                q: 'How does rainy season affect my pool?',
-                a: 'Heavy rain dilutes chemicals, increases algae risk, and can clog filters with debris. We increase visit frequency during rainy season and recommend our Plus package (2x/week) from November to March.',
-              },
-              {
-                q: 'Do you offer a discount for longer contracts?',
-                a: 'Yes. 3-month contracts get 10% off. 6-month contracts get 15% off. Annual contracts are available—message us for pricing.',
-              },
-              {
-                q: 'Can you provide a written report after each visit?',
-                a: 'Yes. Every visit includes a photo + written checklist showing what was done, current water chemistry, and any recommendations. Reports sent via WhatsApp.',
-              },
-            ].map((faq, index) => (
-              <div key={index} className="card">
-                <h3 className="font-semibold text-lg mb-3 text-pool-darker">{faq.q}</h3>
-                <p className="text-gray-700">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <FAQ faqs={faqs} title="Weekly Pool Maintenance FAQs" />
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-pool text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-pool to-pool-dark text-white">
         <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Start Your Weekly Service Today
+            Start Your Weekly Pool Maintenance Today
           </h2>
           <p className="text-xl mb-8 text-pool-light max-w-2xl mx-auto">
-            Reliable, transparent, and convenient pool care for your Bali villa
+            Reliable, transparent, and professional pool care for your Bali villa or resort
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/pricing" className="btn-primary bg-white text-pool hover:bg-gray-100">
               View Maintenance Pricing
             </Link>
             <a
-              href="https://wa.me/62811XXXXXXX?text=I%20want%20weekly%20pool%20maintenance"
+              href="https://wa.me/6282237565997?text=I%20want%20weekly%20pool%20maintenance"
               className="btn-secondary border-white text-white hover:bg-white/10"
               target="_blank"
               rel="noopener noreferrer"

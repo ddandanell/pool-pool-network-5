@@ -1,12 +1,48 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, Palmtree, Waves, Mountain, Building } from 'lucide-react';
+import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Pool Service Bali | Canggu, Seminyak, Ubud & More',
-  description: 'Pool cleaning & maintenance across Bali: Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua. WhatsApp to book.',
-  keywords: 'pool service areas Bali, Canggu pool cleaning, Seminyak pool maintenance',
+  title: 'Pool Service Areas Bali | Canggu, Seminyak, Ubud, Uluwatu & More',
+  description: 'Professional pool service across Bali: Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, Jimbaran, Kerobokan. Same-day emergency service available. WhatsApp to book.',
+  keywords: 'pool service areas Bali, Canggu pool cleaning, Seminyak pool maintenance, Ubud pool service, Uluwatu pool care, Sanur pool cleaning, Nusa Dua pool maintenance',
 };
+
+const faqs = [
+  {
+    question: 'What areas of Bali do you provide pool service?',
+    answer: 'We provide pool maintenance, cleaning, and repair services across all major areas of Bali including Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, Jimbaran, Kerobokan, Gianyar, Bedugul, Candidasa, and Padang Bai. If your area isn\'t listed, contact us—we may still be able to serve you.',
+  },
+  {
+    question: 'Which areas have same-day emergency service?',
+    answer: 'Same-day emergency green pool rescue is available in Canggu and Seminyak (if contacted before 10 AM). Other areas typically receive emergency service within 1-2 business days. We prioritize urgent situations across all service areas.',
+  },
+  {
+    question: 'Do prices vary by location?',
+    answer: 'Our base pricing is the same across all service areas. However, very remote locations may incur a small travel surcharge. We\'ll always inform you of any additional costs upfront before starting service.',
+  },
+  {
+    question: 'How do you handle pools in jungle areas like Ubud?',
+    answer: 'Ubud and other jungle locations require specialized care due to heavy leaf fall and mineral-rich water. We adjust our service approach with extra debris removal, more frequent filter cleaning, and treatments suited to the local water conditions.',
+  },
+  {
+    question: 'Can you service resort and hotel pools?',
+    answer: 'Yes, we work with resorts and hotels across Bali, particularly in Nusa Dua and Jimbaran. We coordinate with property management teams, offer flexible scheduling, and provide professional-grade service to meet resort standards.',
+  },
+  {
+    question: 'Do you service saltwater pools in coastal areas?',
+    answer: 'Absolutely! Many pools in Seminyak, Canggu, and other coastal areas are saltwater systems. Our Premium package is specifically designed for saltwater pools and includes corrosion prevention, salt cell maintenance, and specialized chemical management.',
+  },
+  {
+    question: 'What\'s the response time for non-emergency service?',
+    answer: 'For regular maintenance inquiries, we respond within 2 hours during business hours. First visits for new clients are typically scheduled within 24-48 hours. We work with your schedule to find the most convenient service times.',
+  },
+  {
+    question: 'Can I get pool service if I\'m not in the listed areas?',
+    answer: 'Possibly! Contact us via WhatsApp with your location, and we\'ll let you know if we can serve your area. We\'re expanding our coverage and may be able to accommodate locations not currently listed.',
+  },
+];
 
 export default function Areas() {
   const areas = [
@@ -87,16 +123,22 @@ export default function Areas() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-pool to-pool-dark text-white py-16 md:py-24">
-        <div className="section-container">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Professional Pool Care Across Bali
+      <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80)' }}
+          role="img"
+          aria-label="Beautiful Bali landscape with pool service areas across the island"
+        />
+        <div className="section-container relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Pool Service Areas Across Bali
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl mb-8">
-            We serve all major villa communities in Bali. Same-day response in Canggu & Seminyak. Standard response time 1–2 days for more remote areas.
+            We serve all major villa communities in Bali with professional pool maintenance, cleaning, and repair services. Same-day emergency response in Canggu &amp; Seminyak.
           </p>
           <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4 max-w-2xl">
-            <Clock className="h-8 w-8 flex-shrink-0" />
+            <Clock className="h-8 w-8 flex-shrink-0" aria-hidden="true" />
             <div>
               <p className="font-semibold text-lg">Response Times:</p>
               <p className="text-pool-light">Same-day: Canggu & Seminyak | 1-2 days: Other areas</p>
@@ -119,7 +161,7 @@ export default function Areas() {
                 <ul className="space-y-3">
                   {area.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-start space-x-2">
-                      <MapPin className="h-5 w-5 text-pool mt-0.5 flex-shrink-0" />
+                      <MapPin className="h-5 w-5 text-pool mt-0.5 flex-shrink-0" aria-hidden="true" />
                       <span className="text-gray-700">{feature}</span>
                     </li>
                   ))}
@@ -170,7 +212,7 @@ export default function Areas() {
               </div>
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <p className="text-center text-gray-700">
-                  Don&rsquo;t see your area? <a href="https://wa.me/62811XXXXXXX?text=Pool%20service%20inquiry" className="text-pool hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Message us on WhatsApp</a> and we&rsquo;ll let you know if we can serve you.
+                  Don&rsquo;t see your area? <a href="https://wa.me/6282237565997?text=Pool%20service%20inquiry" className="text-pool hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Message us on WhatsApp</a> and we&rsquo;ll let you know if we can serve you.
                 </p>
               </div>
             </div>
@@ -208,18 +250,21 @@ export default function Areas() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <FAQ faqs={faqs} title="Pool Service Areas FAQs" />
+
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-pool text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-pool to-pool-dark text-white">
         <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Book Service in Your Area?
+            Ready to Book Pool Service in Your Area?
           </h2>
           <p className="text-xl mb-8 text-pool-light max-w-2xl mx-auto">
-            Tell us your location and we&rsquo;ll confirm your first visit within 2 hours
+            Tell us your location and we&rsquo;ll confirm your first pool maintenance visit within 2 hours
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/62811XXXXXXX?text=Pool%20service%20in%20[YOUR%20AREA]"
+              href="https://wa.me/6282237565997?text=Pool%20service%20in%20[YOUR%20AREA]"
               className="btn-primary bg-white text-pool hover:bg-gray-100"
               target="_blank"
               rel="noopener noreferrer"
