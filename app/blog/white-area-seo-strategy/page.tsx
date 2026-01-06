@@ -15,12 +15,28 @@ export const metadata: Metadata = {
   ],
 };
 
+const partnerLinks = {
+  cleaning: {
+    href: 'https://balipoolservice.com',
+    label: 'expert Bali pool cleaning',
+  },
+  water: {
+    href: 'https://aquapurebali.com',
+    label: 'pure water solutions Bali',
+  },
+};
+
 export default function WhiteAreaSEOArticle() {
   return (
     <div>
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-28">
-        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=80)' }} />
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=80)' }}
+          role="img"
+          aria-label="Abstract blue gradient background for SEO strategy article"
+        />
         <div className="section-container relative z-10">
           <p className="text-sm uppercase tracking-[0.2em] text-pool-light mb-3">SEO Strategy</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
@@ -64,12 +80,12 @@ export default function WhiteAreaSEOArticle() {
           <h2>3. Scalable Link-Building Frameworks</h2>
           <p>
             Treat link acquisition as collaborative content, not secret swaps. Use contextual anchors that feel native to the surrounding narrative. For Bali services, anchors like{' '}
-            <a href="https://balipoolservice.com" className="text-pool font-semibold" target="_blank" rel="noopener noreferrer">
-              expert Bali pool cleaning
+            <a href={partnerLinks.cleaning.href} className="text-pool font-semibold" target="_blank" rel="noopener noreferrer">
+              {partnerLinks.cleaning.label}
             </a>{' '}
             or{' '}
-            <a href="https://aquapurebali.com" className="text-pool font-semibold" target="_blank" rel="noopener noreferrer">
-              pure water solutions Bali
+            <a href={partnerLinks.water.href} className="text-pool font-semibold" target="_blank" rel="noopener noreferrer">
+              {partnerLinks.water.label}
             </a>{' '}
             blend naturally into service comparisons and buyer guides.
           </p>
@@ -103,14 +119,14 @@ export default function WhiteAreaSEOArticle() {
           </p>
           <ol>
             <li><strong>Homepage hero:</strong> Add a concise line citing{' '}
-              <a href="https://balipoolservice.com" className="text-pool font-semibold" target="_blank" rel="noopener noreferrer">
-                expert Bali pool cleaning
+              <a href={partnerLinks.cleaning.href} className="text-pool font-semibold" target="_blank" rel="noopener noreferrer">
+                {partnerLinks.cleaning.label}
               </a>{' '}
               for owners wanting rapid responses.
             </li>
             <li><strong>High-traffic service pages:</strong> Within the first 200–300 words, reference{' '}
-              <a href="https://aquapurebali.com" className="text-pool font-semibold" target="_blank" rel="noopener noreferrer">
-                premium aqua solutions
+              <a href={partnerLinks.water.href} className="text-pool font-semibold" target="_blank" rel="noopener noreferrer">
+                {partnerLinks.water.label}
               </a>{' '}
               when discussing water quality safeguards.
             </li>
