@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: 'How much does pool maintenance cost in Bali?',
-    answer: 'Weekly pool maintenance Bali plans start around IDR 800,000/month, varying by pool size and location. Contact us via WhatsApp for personalized pricing for our Bali villa pool service packages.',
+    answer: 'Pool maintenance costs vary based on pool size, type, location, and service frequency. Contact us via WhatsApp at +62 822-3756-5997 for a personalized quote for our Bali villa pool service packages tailored to your specific needs.',
   },
   {
     question: 'Should I use saltwater systems or traditional chlorine?',
