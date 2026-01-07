@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X, Droplet } from 'lucide-react';
+import { Menu, X, Waves } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2" aria-label="Bali Pool Pros - Home">
-            <Droplet className="h-8 w-8 text-pool" aria-hidden="true" />
+            <Waves className="h-8 w-8 text-pool" aria-hidden="true" />
             <span className="text-2xl font-bold text-pool-darker">Bali Pool Pros</span>
           </Link>
 

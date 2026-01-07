@@ -50,7 +50,6 @@ export default function Home() {
     <div>
       {/* Hero Section with Background Image */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-24 md:py-40">
-        {/* Hero background image placeholder */}
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1920&q=80)' }}

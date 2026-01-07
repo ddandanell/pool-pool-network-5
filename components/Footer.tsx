@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Droplet, MessageCircle, Mail, Clock, MapPin, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Waves, MessageCircle, Mail, Clock, MapPin, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <Droplet className="h-8 w-8" />
+              <Waves className="h-8 w-8" />
               <span className="text-xl font-bold">Bali Pool Pros</span>
             </div>
             <p className="text-pool-light mb-4">
