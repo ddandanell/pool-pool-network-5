@@ -114,7 +114,7 @@ export default function WeeklyMaintenance() {
             <div className="card">
               <h3 className="text-2xl font-semibold mb-4 text-pool-darker">Keep Algae Away with Pool Chemical Balancing</h3>
               <p className="text-gray-700 text-lg">
-                Consistent pool chemical balancing and proper chlorine and pH levels keep algae away. In Bali&rsquo;s humid climate, skipping weeks invites green water and equipment damage. Weekly pool maintenance Bali ensures your pool stays crystal clear.
+                Consistent <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">pool chemical balancing</a> and proper chlorine and pH levels keep <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">algae away</a>. In Bali&rsquo;s humid climate, skipping weeks invites green water and equipment damage. Weekly pool maintenance Bali ensures your pool stays crystal clear.
               </p>
             </div>
             <div className="card">

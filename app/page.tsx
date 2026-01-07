@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: 'How much does pool maintenance cost in Bali?',
-    answer: 'Weekly pool maintenance Bali plans start around IDR 800,000/month, varying by pool size and location. Contact us via WhatsApp for personalized pricing for our Bali villa pool service packages.',
+    answer: 'Pool maintenance costs vary based on pool size, type, location, and service frequency. Contact us via WhatsApp at +62 822-3756-5997 for a personalized quote for our Bali villa pool service packages tailored to your specific needs.',
   },
   {
     question: 'Should I use saltwater systems or traditional chlorine?',
@@ -97,10 +97,10 @@ export default function Home() {
               Bali&rsquo;s Leading Pool Cleaning &amp; Maintenance Experts Since 2010
             </h2>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Welcome to Bali Pool Pros, the island&rsquo;s most trusted pool cleaning and maintenance company. Founded in 2010 by local Balinese experts and international pool specialists, we understand the unique challenges of maintaining pools in Bali&rsquo;s tropical climate. Our specialized villa pool service includes chemical balancing, algae treatment, and green pool rescue—tailored for the humidity of Ubud to the salt air of Seminyak.
+              Welcome to Bali Pool Pros, the island&rsquo;s most trusted pool cleaning and maintenance company. Founded in 2010 by local Balinese experts and international pool specialists, we understand the unique challenges of maintaining pools in Bali&rsquo;s tropical climate. Our specialized villa pool service includes <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">chemical balancing</a>, <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">algae treatment</a>, and green pool rescue—tailored for the humidity of Ubud to the salt air of Seminyak.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              We serve over 500 villas, resorts, and residential properties annually across Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, and beyond. Whether you need weekly maintenance, emergency algae treatment and green pool rescue, pool repair, or new pool installation, our experienced team delivers reliable, transparent, and professional service. Contact us today via WhatsApp for the fastest response.
+              We serve over 500 villas, resorts, and residential properties annually across Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, and beyond. Whether you need <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">weekly maintenance</a>, emergency <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">algae treatment and green pool rescue</a>, pool repair, or new pool installation, our experienced team delivers reliable, transparent, and professional service. Contact us today via WhatsApp for the fastest response.
             </p>
           </div>
         </div>

@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   description: 'Professional pool cleaning Bali and pool maintenance Bali services. Expert pool chemical balancing, algae treatment, green pool rescue, and Bali villa pool service. Serving Canggu, Seminyak, Ubud & more since 2010.',
   keywords: 'pool cleaning Bali, pool maintenance Bali, Bali villa pool service, algae treatment, green pool rescue, pool chemical balancing, pool service Bali, villa pool maintenance, tropical pool care',
   metadataBase: new URL('https://balipoolpros.com'),
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   alternates: {
     canonical: '/',
   },
