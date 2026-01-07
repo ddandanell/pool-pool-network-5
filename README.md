@@ -1,62 +1,57 @@
-# Bali Pool Care Website
+# Bali Pool Pros Website
 
-Professional pool maintenance and emergency rescue services website for Bali villas.
+Official website for Bali Pool Pros - Professional pool maintenance and care services in Bali.
 
-## Features
+## Technical Stack
 
-- **8 Complete Pages**: Home, Services, Weekly Maintenance, Green Pool Rescue, Areas We Serve, Pricing, About, Contact
-- **Responsive Design**: Mobile-first design that works on all devices
-- **WhatsApp Integration**: Direct booking and contact via WhatsApp
-- **SEO Optimized**: All pages have proper meta tags, titles, and descriptions
-- **Modern UI**: Clean, professional design with pool-themed colors
+- Next.js 14 with TypeScript
+- Tailwind CSS for styling
+- Lucide React for icons
+- Responsive design optimized for all devices
 
-## Getting Started
+## Development
 
-### Installation
+### Setup
 
-1. Install dependencies:
+Install dependencies:
 ```bash
 npm install
 ```
 
-2. Run the development server:
+Run development server:
 ```bash
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Building for Production
+### Building
 
+Build for production:
 ```bash
 npm run build
 npm start
 ```
 
-### Export Static Site
-
-This project is configured to export as a static site:
-
+Build static export:
 ```bash
 npm run build
 ```
 
-The static files will be in the `out` directory.
+Static files will be in the `out` directory.
 
-## Customization
+## Configuration
 
-### Update Contact Information
+### Contact Information
 
-Replace the following placeholders throughout the site:
+Update contact details in:
+- `app/contact/page.tsx`
+- `components/Footer.tsx`
+- `app/layout.tsx` (schema data)
 
-- **WhatsApp Number**: Search for `62811XXXXXXX` and replace with your actual WhatsApp number
-- **Email**: Search for `hello@balipoolcare.com` and replace with your actual email
-- **Year Founded**: Search for `[YEAR]` in the About page
-- **Team Information**: Update the team section in `/app/about/page.tsx`
+### Brand Colors
 
-### Update Colors
-
-The pool theme colors can be customized in `tailwind.config.js`:
+Modify colors in `tailwind.config.js`:
 
 ```javascript
 colors: {
@@ -69,125 +64,36 @@ colors: {
 }
 ```
 
-### Add Images
+### Images
 
-To add pool images:
-
-1. Create a `public/images` directory
-2. Add your images there
-3. Reference them in the pages using Next.js Image component
-
-Example:
-```jsx
-import Image from 'next/image';
-
-<Image
-  src="/images/pool-hero.jpg"
-  alt="Pool cleaning"
-  width={1200}
-  height={600}
-/>
-```
+Place images in `public/images/` and reference using Next.js Image component.
 
 ## Project Structure
 
 ```
-pool web1/
-├── app/
-│   ├── about/page.tsx           # About page
-│   ├── areas/page.tsx           # Areas we serve
-│   ├── contact/page.tsx         # Contact page with form
-│   ├── green-pool-rescue/page.tsx # Emergency service
-│   ├── pricing/page.tsx         # Pricing tables
-│   ├── services/page.tsx        # Services overview
-│   ├── weekly-maintenance/page.tsx # Weekly maintenance
-│   ├── layout.tsx               # Root layout
-│   ├── page.tsx                 # Home page
-│   └── globals.css              # Global styles
-├── components/
-│   ├── Header.tsx               # Navigation header
-│   └── Footer.tsx               # Site footer
-├── public/                      # Static files
-├── next.config.js               # Next.js configuration
-├── tailwind.config.js           # Tailwind CSS configuration
-└── package.json
+/
+├── app/                  # Next.js app directory
+│   ├── about/           # About page
+│   ├── areas/           # Service areas
+│   ├── contact/         # Contact form
+│   ├── services/        # Services overview
+│   ├── pricing/         # Pricing information
+│   └── ...
+├── components/          # Reusable components
+├── public/             # Static assets
+└── ...
 ```
-
-## Pages Overview
-
-1. **Home** (`/`) - Hero section, how it works, testimonials, why choose us
-2. **Services** (`/services`) - Overview of weekly maintenance and emergency rescue
-3. **Weekly Maintenance** (`/weekly-maintenance`) - Detailed weekly service information
-4. **Green Pool Rescue** (`/green-pool-rescue`) - Emergency algae treatment service
-5. **Areas We Serve** (`/areas`) - Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua
-6. **Pricing** (`/pricing`) - Transparent pricing tables with all packages
-7. **About** (`/about`) - Company story, team, values, commitment
-8. **Contact** (`/contact`) - Contact form, WhatsApp, email, service hours
-
-## SEO
-
-All pages include:
-- Meta titles
-- Meta descriptions
-- Keywords
-- Proper heading hierarchy (H1, H2, H3)
-- Internal linking structure
-
-## Internal Linking
-
-The site includes strategic internal links as specified:
-- Home → Services, Weekly Maintenance, Contact
-- Services → Weekly Maintenance, Green Pool Rescue
-- Weekly Maintenance → Pricing
-- Green Pool Rescue → Pricing, Contact
-- Areas We Serve → Pricing
-- About → Contact
-
-## WhatsApp Integration
-
-The contact form sends inquiries via WhatsApp. When a user submits the form:
-1. Form data is compiled into a message
-2. WhatsApp web/app opens with the pre-filled message
-3. User clicks send to complete the booking
-
-## Technologies Used
-
-- **Next.js 14** - React framework
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Styling
-- **Lucide React** - Icons
-- **Static Export** - No server required
 
 ## Deployment
 
-### Deploy to Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import the project in Vercel
-3. Deploy
-
-### Deploy to Netlify
-
-1. Build the static site: `npm run build`
-2. Upload the `out` directory to Netlify
-3. Configure redirects if needed
-
-### Deploy to Any Static Host
-
-The site can be deployed to any static hosting service:
-- GitHub Pages
+Compatible with:
+- Vercel
+- Netlify
 - Cloudflare Pages
-- AWS S3
-- Azure Static Web Apps
+- Any static hosting service
 
-Simply build and upload the `out` directory.
-
-## Support
-
-For issues or questions about the website:
-- Check the Next.js documentation: [https://nextjs.org/docs](https://nextjs.org/docs)
-- Tailwind CSS documentation: [https://tailwindcss.com/docs](https://tailwindcss.com/docs)
+Build and upload the `out` directory for static deployments.
 
 ## License
 
-© 2024 Bali Pool Care. All rights reserved.
+© 2024 Bali Pool Pros. All rights reserved.

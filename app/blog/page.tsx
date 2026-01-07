@@ -11,16 +11,6 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
-    id: 0,
-    title: 'White-Area SEO Blueprint: Ethical, High-Impact Optimization',
-    excerpt: 'A compliance-minded SEO blueprint that blends semantic depth, contextual link placement, engagement templates, and adaptive meta updates to accelerate rankings while staying transparent.',
-    date: '2025-01-05',
-    author: 'Editorial Team',
-    readTime: '9 min read',
-    category: 'Strategy',
-    slug: 'white-area-seo-strategy',
-  },
-  {
     id: 1,
     title: 'The Complete Guide to Pool Maintenance in Bali\'s Tropical Climate',
     excerpt: 'Bali\'s unique tropical climate presents special challenges for pool owners. High humidity, monsoon rains, and warm temperatures year-round create the perfect environment for algae growth and water chemistry imbalances. In this comprehensive guide, we explore the essential steps to keep your pool pristine in paradise.',
