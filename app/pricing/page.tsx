@@ -63,7 +63,7 @@ export default function Pricing() {
             Transparent, fair pricing for professional pool cleaning Bali, pool maintenance Bali, pool chemical balancing, and Bali villa pool service. No hidden fees. No surprises.
           </p>
           <a
-            href="https://wa.me/6282237565997?text=I%20would%20like%20a%20price%20quote%20for%20pool%20service"
+            href="https://wa.me/6282323011656?text=I%20would%20like%20a%20price%20quote%20for%20pool%20service"
             className="btn-primary bg-white text-pool hover:bg-gray-100 inline-flex items-center space-x-2"
             target="_blank"
             rel="noopener noreferrer"
@@ -106,7 +106,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/6282237565997?text=I%20want%20a%20quote%20for%20Standard%20weekly%20maintenance"
+                href="https://wa.me/6282323011656?text=I%20want%20a%20quote%20for%20Standard%20weekly%20maintenance"
                 className="btn-primary w-full text-center"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -145,7 +145,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/6282237565997?text=I%20want%20a%20quote%20for%20Plus%20weekly%20maintenance"
+                href="https://wa.me/6282323011656?text=I%20want%20a%20quote%20for%20Plus%20weekly%20maintenance"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block w-full text-center"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -179,7 +179,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/6282237565997?text=I%20want%20a%20quote%20for%20Premium%20weekly%20maintenance"
+                href="https://wa.me/6282323011656?text=I%20want%20a%20quote%20for%20Premium%20weekly%20maintenance"
                 className="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block w-full text-center"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -249,7 +249,7 @@ export default function Pricing() {
                     ))}
                   </ul>
                   <a
-                    href="https://wa.me/6282237565997?text=EMERGENCY%20-%20Green%20pool%20rescue%20quote%20needed"
+                    href="https://wa.me/6282323011656?text=EMERGENCY%20-%20Green%20pool%20rescue%20quote%20needed"
                     className="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -341,7 +341,7 @@ export default function Pricing() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/6282237565997?text=I%20would%20like%20a%20price%20quote%20for%20pool%20service"
+              href="https://wa.me/6282323011656?text=I%20would%20like%20a%20price%20quote%20for%20pool%20service"
               className="btn-primary bg-white text-pool hover:bg-gray-100 inline-flex items-center justify-center space-x-2"
               target="_blank"
               rel="noopener noreferrer"

@@ -215,7 +215,7 @@ export default function WeeklyMaintenance() {
               View Maintenance Pricing
             </Link>
             <a
-              href="https://wa.me/6282237565997?text=I%20want%20weekly%20pool%20maintenance"
+              href="https://wa.me/6282323011656?text=I%20want%20weekly%20pool%20maintenance"
               className="btn-secondary border-white text-white hover:bg-white/10"
               target="_blank"
               rel="noopener noreferrer"

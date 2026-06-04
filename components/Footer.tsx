@@ -111,7 +111,7 @@ export default function Footer() {
                 <MessageCircle className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-pool-light">WhatsApp:</p>
-                  <a href="https://wa.me/6282237565997" className="hover:text-white transition-colors">+62 822-3756-5997</a>
+                  <a href="https://wa.me/6282323011656" className="hover:text-white transition-colors">+62 823-2301-1656</a>
                 </div>
               </li>
               <li className="flex items-start space-x-2">

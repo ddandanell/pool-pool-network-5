@@ -79,7 +79,7 @@ const faqs = [
   },
   {
     question: 'How can I contact Bali Pool Pros?',
-    answer: 'The fastest way to reach us is via WhatsApp at +62 822-3756-5997. You can also email us at hello@balipoolpros.com or use the contact form on our website. We respond to all inquiries within 2 hours during business hours.',
+    answer: 'The fastest way to reach us is via WhatsApp at +62 823-2301-1656. You can also email us at hello@balipoolpros.com or use the contact form on our website. We respond to all inquiries within 2 hours during business hours.',
   },
 ];
 
@@ -358,7 +358,7 @@ export default function About() {
               Contact Our Team Today
             </Link>
             <a
-              href="https://wa.me/6282237565997?text=I%20want%20to%20learn%20more%20about%20your%20service"
+              href="https://wa.me/6282323011656?text=I%20want%20to%20learn%20more%20about%20your%20service"
               className="btn-secondary border-white text-white hover:bg-white/10"
               target="_blank"
               rel="noopener noreferrer"

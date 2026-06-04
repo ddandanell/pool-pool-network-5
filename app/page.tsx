@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: 'How much does pool maintenance cost in Bali?',
-    answer: 'Pool maintenance costs vary based on pool size, type, location, and service frequency. Contact us via WhatsApp at +62 822-3756-5997 for a personalized quote for our Bali villa pool service packages tailored to your specific needs.',
+    answer: 'Pool maintenance costs vary based on pool size, type, location, and service frequency. Contact us via WhatsApp at +62 823-2301-1656 for a personalized quote for our Bali villa pool service packages tailored to your specific needs.',
   },
   {
     question: 'Should I use saltwater systems or traditional chlorine?',
@@ -66,7 +66,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/6282237565997?text=POOL%20SERVICE"
+                href="https://wa.me/6282323011656?text=POOL%20SERVICE"
                 className="btn-primary text-center inline-flex items-center justify-center space-x-2"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -313,13 +313,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/6282237565997?text=POOL%20SERVICE"
+              href="https://wa.me/6282323011656?text=POOL%20SERVICE"
               className="btn-primary bg-white text-pool hover:bg-gray-100 text-center inline-flex items-center justify-center space-x-2"
               target="_blank"
               rel="noopener noreferrer"
             >
               <MessageCircle className="h-5 w-5" aria-hidden="true" />
-              <span>WhatsApp: +62 822-3756-5997</span>
+              <span>WhatsApp: +62 823-2301-1656</span>
             </a>
             <Link href="/contact" className="btn-secondary border-white text-white hover:bg-white/10 text-center">
               Or Use Our Contact Form

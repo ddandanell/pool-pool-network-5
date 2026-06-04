@@ -241,7 +241,7 @@ export default function Blog() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/6282237565997?text=I%20want%20to%20receive%20pool%20care%20tips"
+                href="https://wa.me/6282323011656?text=I%20want%20to%20receive%20pool%20care%20tips"
                 className="btn-primary inline-flex items-center justify-center space-x-2"
                 target="_blank"
                 rel="noopener noreferrer"

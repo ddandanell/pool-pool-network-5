@@ -212,7 +212,7 @@ export default function Areas() {
               </div>
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <p className="text-center text-gray-700">
-                  Don&rsquo;t see your area? <a href="https://wa.me/6282237565997?text=Pool%20service%20inquiry" className="text-pool hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Message us on WhatsApp</a> and we&rsquo;ll let you know if we can serve you.
+                  Don&rsquo;t see your area? <a href="https://wa.me/6282323011656?text=Pool%20service%20inquiry" className="text-pool hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Message us on WhatsApp</a> and we&rsquo;ll let you know if we can serve you.
                 </p>
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function Areas() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/6282237565997?text=Pool%20service%20in%20[YOUR%20AREA]"
+              href="https://wa.me/6282323011656?text=Pool%20service%20in%20[YOUR%20AREA]"
               className="btn-primary bg-white text-pool hover:bg-gray-100"
               target="_blank"
               rel="noopener noreferrer"

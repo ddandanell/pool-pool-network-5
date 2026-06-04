@@ -63,7 +63,7 @@ const jsonLd = {
   description: 'Professional pool cleaning Bali and pool maintenance Bali services offering weekly maintenance, pool chemical balancing, algae treatment, green pool rescue, and Bali villa pool service. Serving villas, resorts, and residential properties across Bali since 2010.',
   image: 'https://balipoolpros.com/og-image.jpg',
   url: 'https://balipoolpros.com',
-  telephone: '+62 822-3756-5997',
+  telephone: '+62 823-2301-1656',
   email: 'hello@balipoolpros.com',
   address: {
     '@type': 'PostalAddress',

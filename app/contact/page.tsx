@@ -7,7 +7,7 @@ import FAQ from '@/components/FAQ';
 const faqs = [
   {
     question: 'What is the fastest way to contact Bali Pool Pros?',
-    answer: 'WhatsApp is our fastest communication channel. Message us at +62 822-3756-5997 and we typically respond within 2 hours during business hours (Monday-Friday 8 AM - 6 PM, Saturday 8 AM - 4 PM). For emergencies, we have a 24-hour WhatsApp line.',
+    answer: 'WhatsApp is our fastest communication channel. Message us at +62 823-2301-1656 and we typically respond within 2 hours during business hours (Monday-Friday 8 AM - 6 PM, Saturday 8 AM - 4 PM). For emergencies, we have a 24-hour WhatsApp line.',
   },
   {
     question: 'How quickly can you start pool service?',
@@ -64,7 +64,7 @@ Preferred Start Date: ${formData.preferredDate}
 Email: ${formData.email}
 Additional Message: ${formData.message}`;
 
-    const whatsappUrl = `https://wa.me/6282237565997?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/6282323011656?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     setSubmitted(true);
   };
@@ -106,12 +106,12 @@ Additional Message: ${formData.message}`;
               <h3 className="font-semibold text-xl mb-3 text-pool-darker">WhatsApp (Fastest)</h3>
               <p className="text-gray-600 mb-4">Message us anytime</p>
               <a
-                href="https://wa.me/6282237565997"
+                href="https://wa.me/6282323011656"
                 className="text-pool font-semibold hover:underline text-lg"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                +62 822-3756-5997
+                +62 823-2301-1656
               </a>
               <p className="text-sm text-gray-500 mt-2">
                 Response time: Under 2 hours (business hours)
@@ -380,13 +380,13 @@ Additional Message: ${formData.message}`;
               Green pool or urgent issue? Contact our 24-hour emergency WhatsApp line for same-day response
             </p>
             <a
-              href="https://wa.me/6282237565997?text=EMERGENCY%20-%20Pool%20service%20needed"
+              href="https://wa.me/6282323011656?text=EMERGENCY%20-%20Pool%20service%20needed"
               className="btn-primary bg-red-500 hover:bg-red-600 inline-flex items-center space-x-2"
               target="_blank"
               rel="noopener noreferrer"
             >
               <MessageCircle className="h-5 w-5" aria-hidden="true" />
-              <span>WhatsApp Emergency Line: +62 822-3756-5997</span>
+              <span>WhatsApp Emergency Line: +62 823-2301-1656</span>
             </a>
           </div>
         </div>

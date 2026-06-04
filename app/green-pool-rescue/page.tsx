@@ -238,7 +238,7 @@ export default function GreenPoolRescue() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/6282237565997?text=EMERGENCY%20-%20Green%20pool%20rescue%20needed"
+              href="https://wa.me/6282323011656?text=EMERGENCY%20-%20Green%20pool%20rescue%20needed"
               className="btn-primary bg-white text-red-600 hover:bg-gray-100 text-center inline-flex items-center justify-center space-x-2"
               target="_blank"
               rel="noopener noreferrer"

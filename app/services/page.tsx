@@ -169,7 +169,7 @@ export default function Services() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/6282237565997?text=I%20need%20pool%20repair%20service"
+                href="https://wa.me/6282323011656?text=I%20need%20pool%20repair%20service"
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -202,7 +202,7 @@ export default function Services() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/6282237565997?text=I%20want%20to%20discuss%20pool%20installation"
+                href="https://wa.me/6282323011656?text=I%20want%20to%20discuss%20pool%20installation"
                 className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -290,7 +290,7 @@ export default function Services() {
               View Pricing
             </Link>
             <a
-              href="https://wa.me/6282237565997?text=I%20need%20pool%20service"
+              href="https://wa.me/6282323011656?text=I%20need%20pool%20service"
               className="btn-secondary border-white text-white hover:bg-white/10"
               target="_blank"
               rel="noopener noreferrer"
