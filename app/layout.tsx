@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Pool Cleaning Bali | Pool Maintenance Bali | Bali Villa Pool Service',
   description: 'Professional pool cleaning Bali and pool maintenance Bali services. Expert pool chemical balancing, algae treatment, green pool rescue, and Bali villa pool service. Serving Canggu, Seminyak, Ubud & more since 2010.',
   keywords: 'pool cleaning Bali, pool maintenance Bali, Bali villa pool service, algae treatment, green pool rescue, pool chemical balancing, pool service Bali, villa pool maintenance, tropical pool care',
-  metadataBase: new URL('https://balipoolpros.com'),
+  metadataBase: new URL('https://balipoolmaintenance.online'),
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
@@ -133,6 +133,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics — TODO: replace G-POOL5XXXXX with real property ID */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-POOL5XXXXX" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-POOL5XXXXX');`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
