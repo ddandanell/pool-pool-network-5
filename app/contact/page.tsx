@@ -124,10 +124,10 @@ Additional Message: ${formData.message}`;
               <h3 className="font-semibold text-xl mb-3 text-pool-darker">Email</h3>
               <p className="text-gray-600 mb-4">For quotes & detailed inquiries</p>
               <a
-                href="mailto:hello@balipoolcare.com"
+                href="mailto:hello@balipoolpros.com"
                 className="text-pool font-semibold hover:underline text-lg"
               >
-                hello@balipoolcare.com
+                hello@balipoolpros.com
               </a>
               <p className="text-sm text-gray-500 mt-2">
                 WhatsApp is faster for booking
@@ -288,7 +288,7 @@ Additional Message: ${formData.message}`;
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pool focus:border-pool outline-none"
-                      placeholder="your@email.com"
+                      placeholder="hello@balipoolpros.com"
                     />
                   </div>
 
