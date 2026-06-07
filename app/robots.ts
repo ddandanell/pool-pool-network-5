@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/', '/static/'],
       },
     ],
-    sitemap: 'https://balipoolpros.com/sitemap.xml',
-    host: 'https://balipoolpros.com',
+    sitemap: 'https://balipoolmaintenance.online/sitemap.xml',
+    host: 'https://balipoolmaintenance.online',
   };
 }
