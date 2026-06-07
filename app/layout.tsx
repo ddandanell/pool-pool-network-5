@@ -64,7 +64,7 @@ const jsonLd = {
   image: 'https://balipoolpros.com/og-image.jpg',
   url: 'https://balipoolpros.com',
   telephone: '+62 823-2301-1656',
-  email: 'hello@balipoolpros.com',
+  email: 'info@balipoolservice.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Jl. Raya Ubud No. 45',

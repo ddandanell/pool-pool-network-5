@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: 'Can I get a quote via email?',
-    answer: 'Yes, you can email us at hello@balipoolpros.com for quotes and detailed inquiries. However, WhatsApp is faster for booking and real-time communication. We respond to all emails within 24 business hours.',
+    answer: 'Yes, you can email us at info@balipoolservice.com for quotes and detailed inquiries. However, WhatsApp is faster for booking and real-time communication. We respond to all emails within 24 business hours.',
   },
   {
     question: 'What payment methods do you accept?',
@@ -124,10 +124,10 @@ Additional Message: ${formData.message}`;
               <h3 className="font-semibold text-xl mb-3 text-pool-darker">Email</h3>
               <p className="text-gray-600 mb-4">For quotes & detailed inquiries</p>
               <a
-                href="mailto:hello@balipoolpros.com"
+                href="mailto:info@balipoolservice.com"
                 className="text-pool font-semibold hover:underline text-lg"
               >
-                hello@balipoolpros.com
+                info@balipoolservice.com
               </a>
               <p className="text-sm text-gray-500 mt-2">
                 WhatsApp is faster for booking
@@ -288,7 +288,7 @@ Additional Message: ${formData.message}`;
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pool focus:border-pool outline-none"
-                      placeholder="hello@balipoolpros.com"
+                      placeholder="info@balipoolservice.com"
                     />
                   </div>
 

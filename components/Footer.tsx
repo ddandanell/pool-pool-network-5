@@ -118,7 +118,7 @@ export default function Footer() {
                 <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-pool-light">Email:</p>
-                  <a href="mailto:hello@balipoolpros.com" className="hover:text-white transition-colors">hello@balipoolpros.com</a>
+                  <a href="mailto:info@balipoolservice.com" className="hover:text-white transition-colors">info@balipoolservice.com</a>
                 </div>
               </li>
               <li className="flex items-start space-x-2">
