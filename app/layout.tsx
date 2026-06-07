@@ -133,11 +133,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics — TODO: replace G-POOL5XXXXX with real property ID */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-POOL5XXXXX" />
+        {/* Google Analytics — balipoolmaintenance.online */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6SZVMJZ7V" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-POOL5XXXXX');`,
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-H6SZVMJZ7V');`,
           }}
         />
         <script
