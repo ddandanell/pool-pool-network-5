@@ -1,12 +1,43 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { MapPin, Clock, Palmtree, Waves, Mountain, Building } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'Pool Cleaning Bali Service Areas | Canggu, Seminyak, Ubud, Uluwatu & More',
-  description: 'Professional pool cleaning Bali and pool maintenance Bali services across all areas: Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua. Same-day emergency algae treatment available. Bali villa pool service. WhatsApp to book.',
+  description: 'Professional pool cleaning Bali and pool maintenance Bali services across all areas: Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, Jimbaran, Kerobokan & more. Same-day emergency algae treatment available. Bali villa pool service. WhatsApp to book.',
   keywords: 'pool cleaning Bali areas, Canggu pool maintenance, Seminyak pool cleaning, Ubud pool service, Bali villa pool service, pool chemical balancing Bali',
+  alternates: {
+    canonical: '/areas',
+  },
+  openGraph: {
+    title: 'Pool Cleaning Bali Service Areas | Canggu, Seminyak, Ubud, Uluwatu & More',
+    description: 'Professional pool cleaning Bali and pool maintenance Bali services across all major areas. Same-day emergency algae treatment. Bali villa pool service.',
+    url: 'https://balipoolmaintenance.online/areas',
+  },
+};
+
+const areasJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://balipoolmaintenance.online/areas',
+      name: 'Pool Cleaning Bali Service Areas',
+      description: 'Professional pool cleaning Bali and pool maintenance Bali services across Canggu, Seminyak, Ubud, and all major Bali areas.',
+      breadcrumb: { '@id': 'https://balipoolmaintenance.online/areas#breadcrumb' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://balipoolmaintenance.online/areas#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://balipoolmaintenance.online' },
+        { '@type': 'ListItem', position: 2, name: 'Areas We Serve', item: 'https://balipoolmaintenance.online/areas' },
+      ],
+    },
+  ],
 };
 
 const faqs = [
@@ -47,6 +78,7 @@ const faqs = [
 export default function Areas() {
   const areas = [
     {
+      id: 'canggu',
       name: 'Canggu',
       icon: <Palmtree className="h-12 w-12" />,
       description: 'The expat & digital nomad hub. High-turnover villas, frequent guest changes. We understand the pace.',
@@ -59,6 +91,7 @@ export default function Areas() {
       color: 'border-pool',
     },
     {
+      id: 'seminyak',
       name: 'Seminyak',
       icon: <Waves className="h-12 w-12" />,
       description: 'Beach-close villas with saltwater and freshwater pools. Our team is experienced with salt-chlorine systems and corrosion prevention.',
@@ -71,6 +104,7 @@ export default function Areas() {
       color: 'border-blue-500',
     },
     {
+      id: 'ubud',
       name: 'Ubud',
       icon: <Mountain className="h-12 w-12" />,
       description: 'Jungle-setting pools need special care—heavy leaf fall, mineral-rich water. We adjust treatment for Ubud\'s unique environment.',
@@ -83,6 +117,7 @@ export default function Areas() {
       color: 'border-green-500',
     },
     {
+      id: 'uluwatu',
       name: 'Uluwatu',
       icon: <MapPin className="h-12 w-12" />,
       description: 'Clifftop infinity pools and architectural showpieces. We handle complex systems and sensitive equipment.',
@@ -95,6 +130,7 @@ export default function Areas() {
       color: 'border-purple-500',
     },
     {
+      id: 'sanur',
       name: 'Sanur',
       icon: <Palmtree className="h-12 w-12" />,
       description: 'East coast villas, many with saltwater or mineral pools. Less tourism pressure, longer-term owner communities.',
@@ -107,6 +143,7 @@ export default function Areas() {
       color: 'border-orange-500',
     },
     {
+      id: 'nusa-dua',
       name: 'Nusa Dua',
       icon: <Building className="h-12 w-12" />,
       description: 'Resort-style villas and high-end properties. We work with property managers and on-site maintenance teams.',
@@ -118,24 +155,57 @@ export default function Areas() {
       ],
       color: 'border-red-500',
     },
+    {
+      id: 'jimbaran',
+      name: 'Jimbaran',
+      icon: <Waves className="h-12 w-12" />,
+      description: 'Coastal villas and resort properties in Jimbaran Bay. Specialized in saltwater pool care with corrosion prevention for oceanfront properties.',
+      features: [
+        'Saltwater system expertise',
+        'Oceanfront corrosion management',
+        'Coordination with resort teams',
+        'Flexible scheduling for hotel pools',
+      ],
+      color: 'border-teal-500',
+    },
+    {
+      id: 'kerobokan',
+      name: 'Kerobokan',
+      icon: <Building className="h-12 w-12" />,
+      description: 'Connecting Canggu and Seminyak, Kerobokan has a mix of modern villas and traditional homes. Reliable service for varied pool types.',
+      features: [
+        'Quick response times',
+        'Mixed pool type expertise',
+        'Flexible scheduling available',
+        'Standard same-week service',
+      ],
+      color: 'border-indigo-500',
+    },
   ];
 
   return (
     <div>
+      {/* Breadcrumbs */}
+      <Breadcrumbs items={[{ label: 'Areas We Serve' }]} />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80)' }}
-          role="img"
-          aria-label="Beautiful Bali landscape with pool service areas across the island"
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80"
+            alt="Beautiful Bali landscape with pool service areas across the island"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Pool Cleaning Bali Service Areas Across Bali
           </h1>
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl mb-8">
-            We serve all major villa communities in Bali with professional <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:text-white underline font-medium">pool cleaning Bali, pool maintenance Bali</a>, <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:text-white underline font-medium">pool chemical balancing</a>, and Bali villa pool service. Same-day emergency algae treatment in Canggu &amp; Seminyak.
+            We serve all major villa communities in Bali with professional pool cleaning Bali, pool maintenance Bali, pool chemical balancing, and Bali villa pool service. Same-day emergency algae treatment in Canggu &amp; Seminyak.
           </p>
           <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4 max-w-2xl">
             <Clock className="h-8 w-8 flex-shrink-0" aria-hidden="true" />
@@ -144,6 +214,10 @@ export default function Areas() {
               <p className="text-pool-light">Same-day: Canggu & Seminyak | 1-2 days: Other areas</p>
             </div>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(areasJsonLd) }}
+          />
         </div>
       </section>
 
@@ -152,7 +226,7 @@ export default function Areas() {
         <div className="section-container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {areas.map((area, index) => (
-              <div key={index} className={`card border-2 ${area.color}`}>
+              <div key={index} id={area.id} className={`card border-2 ${area.color}`}>
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="text-pool">{area.icon}</div>
                   <h2 className="text-3xl font-bold text-pool-darker">{area.name}</h2>
@@ -207,6 +281,7 @@ export default function Areas() {
                     <li>Sanur</li>
                     <li>Candidasa</li>
                     <li>Padang Bai</li>
+                    <li>Amed</li>
                   </ul>
                 </div>
               </div>

@@ -1,12 +1,64 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Droplets, AlertTriangle, CheckCircle2, TestTube, Filter, Waves, Camera, MessageCircle, Wrench, Settings, Leaf } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'Pool Cleaning Bali Services | Pool Maintenance, Chemical Balancing & Algae Treatment',
   description: 'Complete pool cleaning Bali services: weekly pool maintenance Bali, pool chemical balancing, algae treatment, green pool rescue, Bali villa pool service, and emergency services. WhatsApp to book.',
   keywords: 'pool cleaning Bali, pool maintenance Bali, Bali villa pool service, pool chemical balancing, algae treatment, green pool rescue, pool services Bali, villa pool maintenance',
+  alternates: {
+    canonical: '/services',
+  },
+  openGraph: {
+    title: 'Pool Cleaning Bali Services | Pool Maintenance, Chemical Balancing & Algae Treatment',
+    description: 'Complete pool cleaning Bali services: weekly pool maintenance Bali, pool chemical balancing, algae treatment, green pool rescue, Bali villa pool service, and emergency services.',
+    url: 'https://balipoolmaintenance.online/services',
+  },
+};
+
+const serviceJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://balipoolmaintenance.online/services',
+      name: 'Pool Cleaning Bali Services',
+      description: 'Complete pool cleaning Bali services: weekly pool maintenance Bali, pool chemical balancing, algae treatment, green pool rescue, Bali villa pool service, and emergency services.',
+      breadcrumb: { '@id': 'https://balipoolmaintenance.online/services#breadcrumb' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://balipoolmaintenance.online/services#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://balipoolmaintenance.online' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://balipoolmaintenance.online/services' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      name: 'Pool Cleaning & Maintenance Services Bali',
+      provider: { '@type': 'LocalBusiness', '@id': 'https://balipoolmaintenance.online' },
+      areaServed: [
+        { '@type': 'City', name: 'Canggu' },
+        { '@type': 'City', name: 'Seminyak' },
+        { '@type': 'City', name: 'Ubud' },
+        { '@type': 'City', name: 'Uluwatu' },
+        { '@type': 'City', name: 'Sanur' },
+        { '@type': 'City', name: 'Nusa Dua' },
+      ],
+      serviceType: [
+        'Weekly Pool Maintenance Bali',
+        'Pool Chemical Balancing',
+        'Algae Treatment',
+        'Green Pool Rescue',
+        'Pool Repair',
+        'Pool Installation',
+      ],
+    },
+  ],
 };
 
 const faqs = [
@@ -47,14 +99,21 @@ const faqs = [
 export default function Services() {
   return (
     <div>
+      {/* Breadcrumbs */}
+      <Breadcrumbs items={[{ label: 'Services' }]} />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80)' }}
-          role="img"
-          aria-label="Professional pool technician servicing a luxury villa pool in Bali"
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80"
+            alt="Professional pool technician servicing a luxury villa pool in Bali"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Complete Pool Cleaning Bali &amp; Maintenance Solutions for Villas &amp; Resorts
@@ -62,6 +121,10 @@ export default function Services() {
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
             From weekly pool maintenance Bali to emergency algae treatment and green pool rescue—we offer comprehensive pool cleaning Bali services, pool chemical balancing, and Bali villa pool service tailored to tropical climate. Over 14 years of experience serving 500+ properties annually.
           </p>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+          />
         </div>
       </section>
 
@@ -82,7 +145,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Core Services */}
+      {/* Core Services — same content as before */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="section-container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">
@@ -214,7 +277,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* What's Included */}
+      {/* What's Included — same content */}
       <section className="py-16 md:py-24 bg-white">
         <div className="section-container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-pool-darker">

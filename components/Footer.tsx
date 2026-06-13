@@ -6,12 +6,33 @@ export default function Footer() {
 
   return (
     <footer className="bg-pool-darker text-white">
+      {/* WhatsApp CTA Bar */}
+      <div className="bg-pool">
+        <div className="section-container py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="text-center md:text-left">
+              <h3 className="text-xl font-bold">Ready for Crystal Clear Pool Service? 🏊</h3>
+              <p className="text-pool-light">Message us on WhatsApp for a free, no-obligation quote</p>
+            </div>
+            <a
+              href="https://wa.me/6282323011656?text=POOL%20SERVICE"
+              className="btn-primary bg-white text-pool-dark hover:bg-gray-100 inline-flex items-center space-x-2 flex-shrink-0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle className="h-5 w-5" aria-hidden="true" />
+              <span className="font-bold">WhatsApp: +62 823-2301-1656</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="section-container py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <Waves className="h-8 w-8" />
+              <Waves className="h-8 w-8" aria-hidden="true" />
               <span className="text-xl font-bold">Bali Pool Pros</span>
             </div>
             <p className="text-pool-light mb-4">
@@ -75,12 +96,12 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Service Areas</h3>
             <ul className="space-y-2 text-pool-light">
-              <li>Canggu</li>
-              <li>Seminyak</li>
-              <li>Ubud</li>
-              <li>Uluwatu</li>
-              <li>Sanur</li>
-              <li>Nusa Dua</li>
+              <li><Link href="/areas#canggu" className="text-pool-light hover:text-white transition-colors">Canggu</Link></li>
+              <li><Link href="/areas#seminyak" className="text-pool-light hover:text-white transition-colors">Seminyak</Link></li>
+              <li><Link href="/areas#ubud" className="text-pool-light hover:text-white transition-colors">Ubud</Link></li>
+              <li><Link href="/areas#uluwatu" className="text-pool-light hover:text-white transition-colors">Uluwatu</Link></li>
+              <li><Link href="/areas#sanur" className="text-pool-light hover:text-white transition-colors">Sanur</Link></li>
+              <li><Link href="/areas#nusa-dua" className="text-pool-light hover:text-white transition-colors">Nusa Dua</Link></li>
             </ul>
           </div>
 
@@ -100,7 +121,7 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
-                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-pool-light">Jl. Raya Ubud No. 45</p>
                   <p className="text-pool-light">Gianyar, Bali 80571</p>
@@ -108,21 +129,21 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start space-x-2">
-                <MessageCircle className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                <MessageCircle className="h-5 w-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-pool-light">WhatsApp:</p>
-                  <a href="https://wa.me/6282323011656" className="hover:text-white transition-colors">+62 823-2301-1656</a>
+                  <a href="https://wa.me/6282323011656" className="hover:text-white transition-colors font-semibold">+62 823-2301-1656</a>
                 </div>
               </li>
               <li className="flex items-start space-x-2">
-                <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-pool-light">Email:</p>
                   <a href="mailto:info@balipoolservice.com" className="hover:text-white transition-colors">info@balipoolservice.com</a>
                 </div>
               </li>
               <li className="flex items-start space-x-2">
-                <Clock className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                <Clock className="h-5 w-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-pool-light">Mon-Fri: 8 AM – 6 PM</p>
                   <p className="text-pool-light">Sat: 8 AM – 4 PM</p>

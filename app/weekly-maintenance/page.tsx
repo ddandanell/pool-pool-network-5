@@ -1,12 +1,50 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckCircle2, CloudRain, Sun, FileText } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'Weekly Pool Maintenance Bali | Professional Pool Cleaning & Chemical Balancing',
   description: 'Professional weekly pool maintenance Bali for villas and resorts. Complete pool chemical balancing, pool cleaning Bali, filter care, debris removal, and detailed reporting. Transparent pricing. WhatsApp booking.',
   keywords: 'weekly pool maintenance Bali, pool cleaning Bali, pool chemical balancing, filter maintenance, Bali villa pool service, pool care Bali, tropical pool maintenance',
+  alternates: {
+    canonical: '/weekly-maintenance',
+  },
+  openGraph: {
+    title: 'Weekly Pool Maintenance Bali | Professional Pool Cleaning & Chemical Balancing',
+    description: 'Professional weekly pool maintenance Bali for villas and resorts. Complete pool chemical balancing, pool cleaning Bali, filter care, debris removal, and detailed reporting.',
+    url: 'https://balipoolmaintenance.online/weekly-maintenance',
+  },
+};
+
+const weeklyJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://balipoolmaintenance.online/weekly-maintenance',
+      name: 'Weekly Pool Maintenance Bali',
+      description: 'Professional weekly pool maintenance Bali for villas and resorts with complete pool chemical balancing.',
+      breadcrumb: { '@id': 'https://balipoolmaintenance.online/weekly-maintenance#breadcrumb' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://balipoolmaintenance.online/weekly-maintenance#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://balipoolmaintenance.online' },
+        { '@type': 'ListItem', position: 2, name: 'Weekly Pool Maintenance', item: 'https://balipoolmaintenance.online/weekly-maintenance' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      name: 'Weekly Pool Maintenance Bali',
+      provider: { '@type': 'LocalBusiness', '@id': 'https://balipoolmaintenance.online' },
+      description: 'Signature weekly pool maintenance Bali service with complete pool chemical balancing, filter care, debris removal, and detailed reporting.',
+      serviceType: 'Weekly Pool Maintenance',
+    },
+  ],
 };
 
 const faqs = [
@@ -47,14 +85,21 @@ const faqs = [
 export default function WeeklyMaintenance() {
   return (
     <div>
+      {/* Breadcrumbs */}
+      <Breadcrumbs items={[{ label: 'Weekly Maintenance' }]} />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1920&q=80)' }}
-          role="img"
-          aria-label="Professional weekly pool maintenance service in Bali villa"
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1920&q=80"
+            alt="Professional weekly pool maintenance service in Bali villa"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Weekly Pool Maintenance Bali That Actually Works
@@ -62,6 +107,10 @@ export default function WeeklyMaintenance() {
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
             Consistency prevents problems. Our comprehensive weekly pool maintenance Bali routine includes expert pool cleaning Bali and pool chemical balancing to keep your villa pool safe, crystal clear, and always ready to use. Trusted by 500+ properties across Bali.
           </p>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(weeklyJsonLd) }}
+          />
         </div>
       </section>
 
@@ -114,7 +163,7 @@ export default function WeeklyMaintenance() {
             <div className="card">
               <h3 className="text-2xl font-semibold mb-4 text-pool-darker">Keep Algae Away with Pool Chemical Balancing</h3>
               <p className="text-gray-700 text-lg">
-                Consistent <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">pool chemical balancing</a> and proper chlorine and pH levels keep <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">algae away</a>. In Bali&rsquo;s humid climate, skipping weeks invites green water and equipment damage. Weekly pool maintenance Bali ensures your pool stays crystal clear.
+                Consistent pool chemical balancing and proper chlorine and pH levels keep algae away. In Bali&rsquo;s humid climate, skipping weeks invites green water and equipment damage. Weekly pool maintenance Bali ensures your pool stays crystal clear.
               </p>
             </div>
             <div className="card">

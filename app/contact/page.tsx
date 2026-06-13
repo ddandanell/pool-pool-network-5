@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { MessageCircle, Mail, Clock, MapPin, CheckCircle2 } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 
 const faqs = [
@@ -38,6 +40,12 @@ const faqs = [
     answer: 'We accept bank transfer (Indonesian banks), cash payment, and major credit cards for larger projects. For regular maintenance, we typically invoice monthly with payment via bank transfer.',
   },
 ];
+
+/**
+ * Structured data for the contact page.
+ * This is a client component, so JSON-LD is embedded server-side via layout.
+ * The contact layout.tsx handles the page-level metadata and JSON-LD.
+ */
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -78,14 +86,21 @@ Additional Message: ${formData.message}`;
 
   return (
     <div>
+      {/* Breadcrumbs */}
+      <Breadcrumbs items={[{ label: 'Contact Us' }]} />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1920&q=80)' }}
-          role="img"
-          aria-label="Contact our Bali pool service team for professional pool maintenance"
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1920&q=80"
+            alt="Contact our Bali pool service team for professional pool maintenance"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Contact Bali Pool Pros – Book Pool Cleaning Bali Service

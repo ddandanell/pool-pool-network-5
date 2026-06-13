@@ -1,12 +1,49 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, User, ArrowRight, Clock } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'Pool Care Blog Bali | Tips, Guides & Expert Advice | Bali Pool Pros',
   description: 'Expert pool care tips and guides for Bali villa owners. Learn about pool maintenance, cleaning techniques, tropical pool challenges, and how to keep your pool crystal clear in Bali\'s climate.',
   keywords: 'pool care blog Bali, pool maintenance tips, swimming pool guides, Bali pool advice, tropical pool care, villa pool tips',
+  alternates: {
+    canonical: '/blog',
+  },
+  openGraph: {
+    title: 'Pool Care Blog Bali | Tips, Guides & Expert Advice | Bali Pool Pros',
+    description: 'Expert pool care tips and guides for Bali villa owners. Learn about pool maintenance, cleaning techniques, and tropical pool challenges.',
+    url: 'https://balipoolmaintenance.online/blog',
+  },
+};
+
+const blogJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://balipoolmaintenance.online/blog',
+      name: 'Pool Care Blog Bali',
+      description: 'Expert pool care tips and guides for Bali villa owners from Bali Pool Pros.',
+      breadcrumb: { '@id': 'https://balipoolmaintenance.online/blog#breadcrumb' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://balipoolmaintenance.online/blog#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://balipoolmaintenance.online' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://balipoolmaintenance.online/blog' },
+      ],
+    },
+    {
+      '@type': 'Blog',
+      name: 'Bali Pool Pros Blog',
+      description: 'Expert pool care tips and guides for Bali villa owners.',
+      publisher: { '@type': 'LocalBusiness', '@id': 'https://balipoolmaintenance.online' },
+    },
+  ],
 };
 
 const blogPosts = [
@@ -110,15 +147,21 @@ const faqs = [
 export default function Blog() {
   return (
     <div>
+      {/* Breadcrumbs */}
+      <Breadcrumbs items={[{ label: 'Blog' }]} />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
-        {/* Hero Image Placeholder - Using gradient as fallback */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1920&q=80)' }}
-          role="img"
-          aria-label="Beautiful pool with tropical palm trees in Bali"
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1920&q=80"
+            alt="Beautiful pool with tropical palm trees in Bali"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Pool Care Blog &amp; Expert Tips
@@ -126,6 +169,10 @@ export default function Blog() {
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
             Expert advice, maintenance tips, and guides for keeping your Bali pool crystal clear. Learn from our experienced team of pool service professionals.
           </p>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+          />
         </div>
       </section>
 
@@ -137,7 +184,7 @@ export default function Blog() {
               Welcome to the Bali Pool Pros blog, your trusted resource for pool maintenance tips, care guides, and expert advice specifically tailored for Bali&rsquo;s unique tropical climate. Whether you own a villa in Canggu, manage a resort pool in Seminyak, or have a residential property in Ubud, our experienced team shares insights gained from over 14 years of professional pool service in Bali.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Pool maintenance in Bali presents unique challenges not found in temperate climates. The combination of high humidity, monsoon rains, year-round warm temperatures, and mineral-rich water requires specialized knowledge and techniques. Our blog covers everything from basic <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">pool chemistry</a> to advanced troubleshooting and <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">water treatment</a>, helping you understand what it takes to keep a pool pristine in paradise.
+              Pool maintenance in Bali presents unique challenges not found in temperate climates. The combination of high humidity, monsoon rains, year-round warm temperatures, and mineral-rich water requires specialized knowledge and techniques. Our blog covers everything from basic pool chemistry to advanced troubleshooting and water treatment, helping you understand what it takes to keep a pool pristine in paradise.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
               Our articles are written by our in-house pool experts, including certified technicians with decades of experience serving Bali&rsquo;s villas and resorts. We believe that educated pool owners make better decisions about their pool care, whether they choose DIY maintenance or professional services. Browse our latest articles below, and feel free to reach out with any questions via WhatsApp.
@@ -155,7 +202,7 @@ export default function Blog() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <article key={post.id} className="card bg-white flex flex-col h-full">
-                {/* Placeholder Image - In production, use actual images */}
+                {/* Placeholder image */}
                 <div 
                   className="h-48 bg-gradient-to-br from-pool-light to-pool rounded-t-xl -mx-6 -mt-6 mb-6 flex items-center justify-center"
                   role="img"

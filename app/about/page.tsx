@@ -1,12 +1,43 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Heart, Shield, Clock, Users, Leaf, MessageCircle, Award, Wrench } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'About Bali Pool Pros | Expert Pool Cleaning Bali & Maintenance Team Since 2010',
   description: 'Bali Pool Pros: Bali\'s leading pool cleaning Bali and pool maintenance Bali company since 2010. Expert pool chemical balancing, algae treatment, Bali villa pool service. Local Balinese and expatriate team serving over 500 projects annually.',
   keywords: 'about Bali Pool Pros, pool cleaning Bali experts, pool maintenance Bali team, Bali villa pool service company, pool chemical balancing specialists',
+  alternates: {
+    canonical: '/about',
+  },
+  openGraph: {
+    title: 'About Bali Pool Pros | Expert Pool Cleaning Bali & Maintenance Team Since 2010',
+    description: 'Bali Pool Pros: Bali\'s leading pool cleaning Bali and pool maintenance Bali company since 2010. Expert pool chemical balancing, algae treatment, Bali villa pool service.',
+    url: 'https://balipoolmaintenance.online/about',
+  },
+};
+
+const aboutJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://balipoolmaintenance.online/about',
+      name: 'About Bali Pool Pros',
+      description: 'Bali\'s leading pool cleaning Bali and pool maintenance Bali company since 2010.',
+      breadcrumb: { '@id': 'https://balipoolmaintenance.online/about#breadcrumb' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://balipoolmaintenance.online/about#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://balipoolmaintenance.online' },
+        { '@type': 'ListItem', position: 2, name: 'About Us', item: 'https://balipoolmaintenance.online/about' },
+      ],
+    },
+  ],
 };
 
 const teamMembers = [
@@ -86,14 +117,21 @@ const faqs = [
 export default function About() {
   return (
     <div>
+      {/* Breadcrumbs */}
+      <Breadcrumbs items={[{ label: 'About Us' }]} />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1572331165267-854da2b10ccc?w=1920&q=80)' }}
-          role="img"
-          aria-label="Professional pool maintenance team at work in Bali"
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?w=1920&q=80"
+            alt="Professional pool maintenance team at work in Bali"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="section-container relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             About Bali Pool Pros—Pool Cleaning Bali Experts
@@ -101,6 +139,10 @@ export default function About() {
           <p className="text-xl md:text-2xl text-pool-light max-w-3xl">
             Bali&rsquo;s trusted pool cleaning Bali and pool maintenance Bali experts since 2010. Local knowledge, international standards, and a passion for crystal-clear pools with expert pool chemical balancing.
           </p>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+          />
         </div>
       </section>
 
@@ -116,7 +158,7 @@ export default function About() {
                 <strong>Founded in 2010</strong> by a group of local Balinese experts and expatriate engineers, Bali Pool Pros started as a small maintenance team serving Ubud villas. What began as a three-person operation has grown into Bali&rsquo;s leading pool service provider, handling over 500 projects annually with a focus on sustainable practices and exceptional customer service.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Our founder, I Made Putra, spent years working with international hotel chains before realizing that villa owners in Bali desperately needed reliable, professional <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">pool care</a>. Too often, he saw beautiful pools neglected or damaged by inexperienced maintenance teams who didn&rsquo;t understand Bali&rsquo;s unique tropical challenges and proper <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">water treatment</a>.
+                Our founder, I Made Putra, spent years working with international hotel chains before realizing that villa owners in Bali desperately needed reliable, professional pool care. Too often, he saw beautiful pools neglected or damaged by inexperienced maintenance teams who didn&rsquo;t understand Bali&rsquo;s unique tropical challenges and proper water treatment.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Together with Thomas Mueller, a German pool specialist who fell in love with Bali and its hospitality industry, Made established Bali Pool Pros with a simple mission: provide world-class pool care with local expertise. We combined Made&rsquo;s deep understanding of Bali&rsquo;s water systems and climate with Thomas&rsquo;s international hotel standards.
@@ -227,7 +269,6 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="card bg-white">
-                {/* Placeholder for team member photo */}
                 <div 
                   className="w-24 h-24 bg-gradient-to-br from-pool-light to-pool rounded-full mx-auto mb-4 flex items-center justify-center"
                   role="img"

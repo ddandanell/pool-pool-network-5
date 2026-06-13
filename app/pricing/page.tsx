@@ -1,12 +1,43 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckCircle2, Shield, AlertTriangle, Calendar, MessageCircle } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'Pool Cleaning Bali Pricing | Pool Maintenance Bali Quotes | Free Quote',
   description: 'Bali Pool Pros pricing: Get a personalized quote for weekly pool maintenance Bali, pool cleaning Bali, pool chemical balancing, emergency algae treatment and green pool rescue. Transparent Bali villa pool service pricing. No hidden fees.',
   keywords: 'pool cleaning Bali price, pool maintenance Bali cost, Bali villa pool service pricing, green pool rescue cost, pool chemical balancing rates, pool service quote Bali',
+  alternates: {
+    canonical: '/pricing',
+  },
+  openGraph: {
+    title: 'Pool Cleaning Bali Pricing | Pool Maintenance Bali Quotes | Free Quote',
+    description: 'Get a personalized quote for weekly pool maintenance Bali, pool cleaning Bali, pool chemical balancing, emergency algae treatment and green pool rescue. Transparent pricing. No hidden fees.',
+    url: 'https://balipoolmaintenance.online/pricing',
+  },
+};
+
+const pricingJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://balipoolmaintenance.online/pricing',
+      name: 'Pool Cleaning Bali Pricing',
+      description: 'Transparent pricing for pool cleaning Bali, pool maintenance Bali, and Bali villa pool service. Get a free personalized quote.',
+      breadcrumb: { '@id': 'https://balipoolmaintenance.online/pricing#breadcrumb' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://balipoolmaintenance.online/pricing#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://balipoolmaintenance.online' },
+        { '@type': 'ListItem', position: 2, name: 'Pricing', item: 'https://balipoolmaintenance.online/pricing' },
+      ],
+    },
+  ],
 };
 
 const faqs = [
@@ -47,14 +78,21 @@ const faqs = [
 export default function Pricing() {
   return (
     <div>
+      {/* Breadcrumbs */}
+      <Breadcrumbs items={[{ label: 'Pricing' }]} />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-20 md:py-32">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1920&q=80)' }}
-          role="img"
-          aria-label="Crystal clear pool with transparent pool service pricing in Bali"
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1920&q=80"
+            alt="Crystal clear pool with transparent pool service pricing in Bali"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="section-container text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Pool Cleaning Bali &amp; Pool Maintenance Pricing
@@ -71,6 +109,10 @@ export default function Pricing() {
             <MessageCircle className="h-5 w-5" aria-hidden="true" />
             <span>Contact Us to Get a Price</span>
           </a>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingJsonLd) }}
+          />
         </div>
       </section>
 

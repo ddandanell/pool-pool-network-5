@@ -1,11 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X, Waves } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -18,6 +20,11 @@ export default function Header() {
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/';
+    return pathname.startsWith(href);
+  };
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -35,7 +42,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-pool font-medium transition-colors duration-200"
+                className={`font-medium transition-colors duration-200 ${
+                  isActive(item.href)
+                    ? 'text-pool border-b-2 border-pool'
+                    : 'text-gray-700 hover:text-pool'
+                }`}
               >
                 {item.name}
               </Link>
@@ -61,7 +72,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block py-3 text-gray-700 hover:text-pool hover:bg-gray-50 rounded-md px-3 font-medium"
+                className={`block py-3 rounded-md px-3 font-medium ${
+                  isActive(item.href)
+                    ? 'text-pool bg-pool-light'
+                    : 'text-gray-700 hover:text-pool hover:bg-gray-50'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

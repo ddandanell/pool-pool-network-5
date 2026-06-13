@@ -1,12 +1,50 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { AlertTriangle, Droplets, Zap, PowerOff, CloudRain, Calendar, CheckCircle2, Clock } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'Algae Treatment & Green Pool Rescue Bali | 24-Hour Emergency Pool Service',
   description: 'Emergency algae treatment and green pool rescue Bali. Same-day service in Canggu & Seminyak. Professional pool chemical balancing, shock treatment, and complete water re-balancing. 24-48 hour pool recovery. WhatsApp to book.',
   keywords: 'algae treatment Bali, green pool rescue Bali, emergency pool service Bali, pool chemical balancing, algae removal, green pool fix, pool cleaning Bali',
+  alternates: {
+    canonical: '/green-pool-rescue',
+  },
+  openGraph: {
+    title: 'Algae Treatment & Green Pool Rescue Bali | 24-Hour Emergency Pool Service',
+    description: 'Emergency algae treatment and green pool rescue Bali. Same-day service in Canggu & Seminyak. Professional pool chemical balancing, shock treatment, and complete water re-balancing.',
+    url: 'https://balipoolmaintenance.online/green-pool-rescue',
+  },
+};
+
+const rescueJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://balipoolmaintenance.online/green-pool-rescue',
+      name: 'Algae Treatment & Green Pool Rescue Bali',
+      description: 'Emergency algae treatment and green pool rescue Bali with same-day service. Professional pool chemical balancing and shock treatment.',
+      breadcrumb: { '@id': 'https://balipoolmaintenance.online/green-pool-rescue#breadcrumb' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://balipoolmaintenance.online/green-pool-rescue#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://balipoolmaintenance.online' },
+        { '@type': 'ListItem', position: 2, name: 'Green Pool Rescue', item: 'https://balipoolmaintenance.online/green-pool-rescue' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      name: 'Green Pool Rescue & Algae Treatment Bali',
+      provider: { '@type': 'LocalBusiness', '@id': 'https://balipoolmaintenance.online' },
+      description: 'Emergency algae treatment and green pool rescue service with 24-48 hour recovery. Same-day response in Canggu and Seminyak.',
+      serviceType: 'Emergency Pool Service',
+    },
+  ],
 };
 
 const faqs = [
@@ -47,14 +85,21 @@ const faqs = [
 export default function GreenPoolRescue() {
   return (
     <div>
+      {/* Breadcrumbs */}
+      <Breadcrumbs items={[{ label: 'Green Pool Rescue' }]} />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-red-500 to-red-700 text-white py-20 md:py-32">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1572331165267-854da2b10ccc?w=1920&q=80)' }}
-          role="img"
-          aria-label="Emergency green pool rescue service in Bali"
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?w=1920&q=80"
+            alt="Emergency green pool rescue service in Bali"
+            fill
+            className="object-cover opacity-10"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="section-container relative z-10">
           <div className="flex items-center space-x-4 mb-6">
             <AlertTriangle className="h-16 w-16" aria-hidden="true" />
@@ -65,6 +110,10 @@ export default function GreenPoolRescue() {
           <p className="text-xl md:text-2xl text-red-100 max-w-3xl">
             Algae blooms happen fast in Bali&rsquo;s tropical climate. Heavy rain, power outages, or neglected pool maintenance Bali can turn your crystal-clear pool green overnight. Our emergency algae treatment and green pool rescue team restores your pool with expert pool chemical balancing within 24-48 hours.
           </p>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(rescueJsonLd) }}
+          />
         </div>
       </section>
 
@@ -194,7 +243,7 @@ export default function GreenPoolRescue() {
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-700 mb-8 text-center">
-              Once we&rsquo;ve rescued your pool with <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">algae treatment</a> and <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">pool chemical balancing</a>, the best way to prevent another green pool emergency is consistent weekly pool maintenance Bali.
+              Once we&rsquo;ve rescued your pool with algae treatment and pool chemical balancing, the best way to prevent another green pool emergency is consistent weekly pool maintenance Bali.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[

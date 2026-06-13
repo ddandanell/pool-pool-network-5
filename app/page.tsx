@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckCircle2, MessageCircle, Clock, Shield, FileText, Droplets, Star, MapPin, Wrench, Leaf } from 'lucide-react';
 import FAQ from '@/components/FAQ';
 
@@ -50,12 +51,16 @@ export default function Home() {
     <div>
       {/* Hero Section with Background Image */}
       <section className="relative bg-gradient-to-br from-pool to-pool-dark text-white py-24 md:py-40">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1920&q=80)' }}
-          role="img"
-          aria-label="Stunning infinity pool overlooking Bali rice terraces at sunrise"
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1920&q=80"
+            alt="Stunning infinity pool overlooking Bali rice terraces at sunrise"
+            fill
+            className="object-cover opacity-30"
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className="section-container relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -97,10 +102,10 @@ export default function Home() {
               Bali&rsquo;s Leading Pool Cleaning &amp; Maintenance Experts Since 2010
             </h2>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Welcome to Bali Pool Pros, the island&rsquo;s most trusted pool cleaning and maintenance company. Founded in 2010 by local Balinese experts and international pool specialists, we understand the unique challenges of maintaining pools in Bali&rsquo;s tropical climate. Our specialized villa pool service includes <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">chemical balancing</a>, <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">algae treatment</a>, and green pool rescue—tailored for the humidity of Ubud to the salt air of Seminyak.
+              Welcome to Bali Pool Pros, the island&rsquo;s most trusted pool cleaning and maintenance company. Founded in 2010 by local Balinese experts and international pool specialists, we understand the unique challenges of maintaining pools in Bali&rsquo;s tropical climate. Our specialized villa pool service includes chemical balancing, algae treatment, and green pool rescue—tailored for the humidity of Ubud to the salt air of Seminyak.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              We serve over 500 villas, resorts, and residential properties annually across Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, and beyond. Whether you need <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">weekly maintenance</a>, emergency <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-pool hover:underline font-medium">algae treatment and green pool rescue</a>, pool repair, or new pool installation, our experienced team delivers reliable, transparent, and professional service. Contact us today via WhatsApp for the fastest response.
+              We serve over 500 villas, resorts, and residential properties annually across Canggu, Seminyak, Ubud, Uluwatu, Sanur, Nusa Dua, and beyond. Whether you need weekly maintenance, emergency algae treatment and green pool rescue, pool repair, or new pool installation, our experienced team delivers reliable, transparent, and professional service. Contact us today via WhatsApp for the fastest response.
             </p>
           </div>
         </div>
