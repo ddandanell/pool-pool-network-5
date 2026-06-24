@@ -156,6 +156,12 @@ export default function Footer() {
 
         <div className="border-t border-pool-dark mt-8 pt-8 text-center text-pool-light">
           <p>&copy; {currentYear} Bali Pool Pros. All rights reserved. | Professional Pool Service in Bali, Indonesia</p>
+          <p className="mt-3 text-sm">
+            Living the villa life in Bali? Find a{" "}
+            <a href="https://privatetutoringbali.com/" target="_blank" rel="noopener" className="underline hover:text-white transition-colors">Bali private tutor</a>{" "}
+            and{" "}
+            <a href="https://mychef.id/" target="_blank" rel="noopener" className="underline hover:text-white transition-colors">hire a private chef in Bali</a>.
+          </p>
         </div>
       </div>
     </footer>
